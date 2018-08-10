@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- TEST -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>イベント情報| Startup Hub Tokyo（スタートアップハブトウキョウ）</title>
+
+    <script src="http://startuphub.tokyo:8081/js/jquery.js"></script>
+
+    <!-- css for new table working -->
+    <link rel="stylesheet" href="../css/fullcalendar.css" >
+    <link rel="stylesheet" href="../css/scheduler.min.css" />
+    <link rel="stylesheet" href="../css/new_style.css" />
+
+</head>
+<body>
+
+    <div class="ibox-content">
+        <div class="fc-calendar-default fc-calendar-classic" id="calendar"></div>
+    </div>
+
+
+
+<!-- Mainly scripts -->
+<script src="../js/moment.min.js"></script>
+<!-- jQuery UI  -->
+<script src="../js/jquery-ui.js"></script>
+<!-- Full Calendar -->
+<script src="../js/fullcalendar.min.js"></script>
+<script src="../js/scheduler.min.js"></script>
+<script src="../js/ja.js"></script>
+
+<!-- javascript for Calendar working -->
+<script>
+    $(document).ready(function() {
+        window.parent.$("#scroll-body").animate({scrollTop:0}, 'slow');
+        console.log(window.parent.$("#scroll-body"));
+        /* initialize the calendar
+         -----------------------------------------------------------------*/
+        $(function() { // document ready
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+            $('#calendar').fullCalendar({
+                schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
+                lang: 'ja',
+                defaultView: 'month',
+                defaultDate: date,
+                contentHeight: "auto",
+                editable: false,
+                selectable: false,
+                eventLimit: true, // allow "more" link when too many events
+                allDaySlot:false,
+                fixedWeekCount:false,
+                showNonCurrentDates:false,
+                columnHeader :false,
+                eventColor: '#fff',
+                eventBorderColor:"#e7eaec",
+                eventOrder:'title',
+                timeFormat: 'HH(:mm)',
+                slotLabelFormat:"HH:mm",
+                minTime:"10:00:00",
+                maxTime:"21:00:00",
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                resourceRender: function(resource, cellEls) {
+                    cellEls.on('click', function() {
+                        console.log('click title',resource);
+                    });
+                },
+                viewRender: function(view, element) {
+                    if (view.name === "month") {
+                        $("#calendar").fullCalendar('option', 'contentHeight', 955);  //change id and height if needed
+                    } else {
+                        $("#calendar").fullCalendar('option', 'contentHeight', "auto"); //change id and height if needed
+                    }
+                },
+                resources: [
+                    { id: 'a', title: 'testSuzukiC10',url: 'http://google.com/' },
+                    { id: 'b', title: 'テスト 鈴木 1',},
+                    { id: 'c', title: 'テスト 鈴木 3',},
+                    { id: 'd', title: 'テスト 鈴木 4',},
+                    { id: 'e', title: 'testSuzukiC5',},
+                    { id: 'f', title: 'testSuzukiC6',},
+                    { id: 'g', title: 'testSuzukiC7',},
+                ],
+                events: [
+                    {
+                        id:'1',
+                        resourceId: 'a',
+                        title: 'testSuzukiC10 ',
+                        start: new Date(y, m, d-1, 15, 30),
+                        end: new Date(y, m, d-1, 17, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'2',
+                        resourceId: 'b',
+                        title: 'テスト 鈴木 1',
+                        start: new Date(y, m, d, 10, 30),
+                        end: new Date(y, m, d, 11, 30),
+                        allDay: false
+                    },
+                    {
+                        id:'3',
+                        resourceId: 'c',
+                        title: 'テスト 鈴木 3',
+                        start: new Date(y, m, d, 10, 30),
+                        end: new Date(y, m, d, 11, 30),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'4',
+                        resourceId: 'd',
+                        title: 'テスト 鈴木 4',
+                        start: new Date(y, m, d, 10, 30),
+                        end: new Date(y, m, d, 11, 30),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'5',
+                        resourceId: 'e',
+                        title: 'testSuzukiC5',
+                        start: new Date(y, m, d, 15, 0),
+                        end: new Date(y, m, d, 16, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'6',
+                        resourceId: 'f',
+                        title: 'testSuzukiC6 ',
+                        start: new Date(y, m, d, 20, 0),
+                        end: new Date(y, m, d, 20, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'7',
+                        resourceId: 'g',
+                        title: 'testSuzukiC7',
+                        start: new Date(y, m, d, 12, 0),
+                        end: new Date(y, m, d, 13, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'8',
+                        resourceId: 'a',
+                        title: 'test 8 ',
+                        start: new Date(y, m, d+1, 13, 0),
+                        end: new Date(y, m, d+1, 15, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'9',
+                        resourceId: 'b',
+                        title: 'test 2',
+                        start: new Date(y, m, d+2, 11, 0),
+                        end: new Date(y, m, d+2, 12,0),
+                        allDay: false
+                    },
+                    {
+                        id:'10',
+                        resourceId: 'c',
+                        title: 'test 3',
+                        start: new Date(y, m, d+2, 12, 0),
+                        end: new Date(y, m, d+2, 13, 0),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'11',
+                        resourceId: 'd',
+                        title: 'test 4',
+                        start: new Date(y, m, d-1, 12, 0),
+                        end: new Date(y, m, d-1, 12, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'12',
+                        resourceId: 'e',
+                        title: '高橋',
+                        start: new Date(y, m, d-2, 14, 0),
+                        end: new Date(y, m, d-2, 14, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'13',
+                        resourceId: 'f',
+                        title: '鈴木',
+                        start: new Date(y, m, d-2, 14, 0),
+                        end: new Date(y, m, d-2, 15, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'14',
+                        resourceId: 'f',
+                        title: '高橋',
+                        start: new Date(y, m, d-2, 14, 0),
+                        end: new Date(y, m, d-2, 15, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                    {
+                        id:'14',
+                        resourceId: 'g',
+                        title: 'test 7',
+                        start: new Date(y, m, d+2, 15, 0),
+                        end: new Date(y, m, d+2, 15, 40),
+                        url: '#!',
+                        allDay: false
+                    },
+                ],
+
+                /* eventAfterAllRender: function (event, element, view) {
+                     $('#calendar').find('.fc-more').text(function(i, t) {
+                             return t.replace('more', 'もっと見る')
+                         });
+                 },
+ */
+            });
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* [ variable ]
+-------------------------------------------------*/
+/* font */
+/* font */
+/*  */
+/* [ font style ]
+-------------------------------------------------*/
+/* [ opacity ]
+-------------------------------------------------*/
+/* [ blur ]
+-------------------------------------------------*/
+/* [ radius ]
+-------------------------------------------------*/
+/* [ easing ]
+-------------------------------------------------*/
+/* [ transform ]
+-------------------------------------------------*/
+/* [ layout ]
+-------------------------------------------------*/
+/* #
+-------------------------------------------------- */
+#facility-guide #page-title {
+  margin-bottom: 0; }
+
+#facility-guide #fooler-map .section-title .jp {
+  font-weight: bold; }
+
+#facility-guide #fooler-map .map-container {
+  position: relative; }
+
+#facility-guide #fooler-map .info .office-hours {
+  position: relative; }
+  #facility-guide #fooler-map .info .office-hours dt {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 3px solid #e4e4e3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 38px;
+    line-height: 38px; }
+  #facility-guide #fooler-map .info .office-hours dd {
+    height: 22px; }
+    #facility-guide #fooler-map .info .office-hours dd > * {
+      font-size: 13px;
+      line-height: 1; }
+    #facility-guide #fooler-map .info .office-hours dd .title {
+      font-weight: bold;
+      display: inline-block; }
+
+#facility-guide #floor .section-inner .section-contents .floor-list .floor-container {
+  position: relative; }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container {
+    position: relative; }
+    #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container:after {
+      width: 100%;
+      height: 100%;
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: #e8e6e2; }
+    #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner {
+      background-color: #fff;
+      position: relative;
+      z-index: 1; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .title {
+        height: 42px;
+        vertical-align: middle;
+        overflow: inherit; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .title:before {
+          display: inline-block;
+          content: "";
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative; }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no1 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no3 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no5 .photo {
+    right: 0; }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no1 .text-container .text-container-inner .title:before {
+    background-image: url("../img/facilityguide/number_pin01.png"); }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no2 .text-container .text-container-inner .title:before {
+    background-image: url("../img/facilityguide/number_pin02.png"); }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no3 .text-container .text-container-inner .title:before {
+    background-image: url("../img/facilityguide/number_pin03.png"); }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no4 .text-container .text-container-inner .title:before {
+    background-image: url("../img/facilityguide/number_pin04.png"); }
+  #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no5 .text-container .text-container-inner .title:before {
+    background-image: url("../img/facilityguide/number_pin05.png"); }
+
+#facility-guide #floor .section-inner .bg-color {
+  height: 100%;
+  top: 0; }
+
+/* PC =================================== */
+/* PC　ALL */
+@media only all and (min-width: 751px) {
+  #facility-guide #fooler-map {
+    margin-bottom: -110px;
+    padding-top: 90px;
+    padding-bottom: 190px; }
+    #facility-guide #fooler-map .section-title {
+      margin-bottom: 50px; }
+    #facility-guide #fooler-map .map {
+      width: 1043px;
+      margin-left: auto;
+      margin-right: auto; }
+    #facility-guide #fooler-map .info {
+      width: 250px;
+      position: absolute;
+      right: 100px;
+      bottom: 27px; }
+      #facility-guide #fooler-map .info .name {
+        margin-bottom: 7px; }
+        #facility-guide #fooler-map .info .name svg {
+          width: 244px;
+          height: 32px; }
+      #facility-guide #fooler-map .info .office-hours {
+        padding-left: 90px; }
+        #facility-guide #fooler-map .info .office-hours dt {
+          width: 67px; }
+        #facility-guide #fooler-map .info .office-hours dd .title {
+          width: 60px; }
+  #facility-guide #floor {
+    margin-bottom: 90px; }
+    #facility-guide #floor .section-inner {
+      padding-top: 95px;
+      padding-bottom: 100px; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container {
+        margin-bottom: 126px; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container {
+          width: 700px;
+          top: 68px;
+          left: 3px; }
+          #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container:after {
+            width: 100%;
+            height: 100%;
+            top: 10px;
+            left: 10px; }
+          #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner {
+            padding-top: 43px;
+            padding-bottom: 61px; }
+            #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .title {
+              height: 42px;
+              margin-bottom: 40px;
+              padding-left: 5px; }
+              #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .title:before {
+                width: 39px;
+                height: 55px;
+                margin-right: 23px;
+                top: 13px;
+                left: -5px; }
+            #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .text {
+              font-size: 14px;
+              line-height: 1.78; }
+            #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .btn {
+              margin-top: 35px; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .photo {
+          width: 450px;
+          position: absolute;
+          top: 0;
+          z-index: 1; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no1 .text-container .text-container-inner, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no3 .text-container .text-container-inner, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no5 .text-container .text-container-inner {
+          padding-left: 50px;
+          padding-right: 115px; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no1 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no3 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no5 .photo {
+          right: 0; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no2 .text-container, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no4 .text-container {
+          float: right; }
+          #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no2 .text-container .text-container-inner, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no4 .text-container .text-container-inner {
+            padding-right: 50px;
+            padding-left: 115px; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no2 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no4 .photo {
+          left: 0; }
+      #facility-guide #floor .section-inner .bg-color {
+        height: 100%;
+        top: 0; } }
+
+/* PC　サイズ別 */
+/* SMP =================================== */
+@media only all and (max-width: 750px) {
+  #facility-guide #fooler-map {
+    padding-top: 23px;
+    padding-bottom: 57px; }
+    #facility-guide #fooler-map .section-title {
+      height: 20px;
+      margin-bottom: 30px; }
+      #facility-guide #fooler-map .section-title > * {
+        line-height: 20px; }
+      #facility-guide #fooler-map .section-title .en {
+        font-size: 20px; }
+      #facility-guide #fooler-map .section-title .jp {
+        width: 60px;
+        font-size: 10px; }
+    #facility-guide #fooler-map .map {
+      margin-bottom: 29px; }
+    #facility-guide #fooler-map .info {
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 40px; }
+      #facility-guide #fooler-map .info .name {
+        margin-bottom: 8px; }
+        #facility-guide #fooler-map .info .name svg {
+          width: 100%;
+          height: auto; }
+      #facility-guide #fooler-map .info .office-hours {
+        padding-left: 112px; }
+        #facility-guide #fooler-map .info .office-hours dt {
+          width: 85px;
+          height: 32px;
+          font-size: 14px;
+          line-height: 32px; }
+        #facility-guide #fooler-map .info .office-hours dd > * {
+          font-size: 14px; }
+        #facility-guide #fooler-map .info .office-hours dd .title {
+          width: 45px;
+          display: inline-block;
+          font-weight: bold; }
+  #facility-guide #floor .section-inner {
+    padding-top: 40px;
+    padding-bottom: 52px; }
+    #facility-guide #floor .section-inner .section-contents .floor-list .floor-container {
+      margin-bottom: 55px; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container {
+        margin-bottom: -100px; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container:after {
+          width: 100%;
+          height: 100%;
+          top: 10px;
+          left: 10px; }
+        #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner {
+          padding: 22px 15px 115px; }
+          #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .title {
+            height: auto;
+            margin-bottom: 15px;
+            text-align: center; }
+            #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .title:before {
+              width: 39px;
+              height: 55px;
+              margin-bottom: 20px;
+              margin-left: auto;
+              margin-right: auto;
+              display: block; }
+          #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .text-container .text-container-inner .btn {
+            margin-top: 25px; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container .photo {
+        width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+        position: relative; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no1 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no3 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no5 .photo {
+        right: 0; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no2 .text-container, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no4 .text-container {
+        float: right; }
+      #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no2 .photo, #facility-guide #floor .section-inner .section-contents .floor-list .floor-container.no4 .photo {
+        left: 0; }
+    #facility-guide #floor .section-inner .bg-color {
+      height: 100%;
+      top: 0; } }

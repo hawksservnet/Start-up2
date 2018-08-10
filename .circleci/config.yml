@@ -1,0 +1,74 @@
+version: 2
+jobs:
+  php_test:
+    docker:
+      - image: php:7.1-apache
+        environment:
+          DEBUG: true
+          DATABASE_URL: "mysql://root@127.0.0.1/startuphub?encoding=utf8mb4&timezone=UTC&cacheMetadata=true"
+          DATABASE_TEST_URL: "mysql://root@127.0.0.1/startuphub?encoding=utf8mb4&timezone=UTC&cacheMetadata=true"
+      - image: circleci/mysql:5.7
+        command: mysqld  --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci --sql-mode=NO_ENGINE_SUBSTITUTION
+        environment:
+          MYSQL_DATABASE: startuphub
+          MYSQL_ALLOW_EMPTY_PASSWORD: true
+
+    working_directory: /var/www/html
+    steps:
+      - run: apt-get update && apt-get -y install git unzip zlib1g-dev libicu-dev
+      - checkout
+      - run: docker-php-ext-install pdo pdo_mysql zip intl
+      - run:
+          name: Install Composer
+          command: |
+            php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
+            php -r "copy('https://composer.github.io/installer.sig', 'composer-setup.sig');" && \
+            php -r "if (hash_file('SHA384', 'composer-setup.php') === trim(file_get_contents('composer-setup.sig'))) { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" && \
+            php composer-setup.php && \
+            php -r "unlink('composer-setup.php');"
+      - restore_cache:
+          key: cakephp3-circleci-startuphub-{{ .Branch }}
+      - run: php composer.phar install --dev --no-interaction
+      - save_cache:
+          key: cakephp3-circleci-startuphub-{{ .Branch }}
+          paths:
+            - "/home/ubuntu/.composer/cache"
+      - run:
+          name: create test repot dir
+          command: mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+      - run:
+          name: chmod permissions
+          command: chmod +x bin/cake
+      - run:
+          name: Initialize Database
+          command: bin/cake migrations migrate
+      - run:
+          name: php code sniffer
+          command: vendor/bin/phpcs --standard=vendor/cakephp/cakephp-codesniffer/CakePHP/ruleset.xml src/ tests/ -n
+      # unit testing updating...
+      # - run:
+      #    name: php unit test
+      #    command: vendor/bin/phpunit
+
+  eslint_javascript:
+    docker:
+      - image: node:6
+    working_directory: /var/www/html
+    steps:
+      - run: npm --v
+      - checkout
+      - restore_cache:
+          key: cakephp3-circleci-startuphub-npm-cache-{{ .Branch }}
+      - run: npm install
+      - save_cache:
+          key: cakephp3-circleci-startuphub-npm-cache-{{ .Branch }}
+          paths:
+            - "/home/ubuntu/.npm-cache"
+      - run: node_modules/.bin/eslint webroot/js/common.js
+
+workflows:
+  version: 2
+  build-all:
+    jobs:
+      - php_test
+      - eslint_javascript

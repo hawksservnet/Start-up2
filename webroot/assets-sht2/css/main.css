@@ -1,0 +1,463 @@
+body {
+    font-family: YuGothic, '游ゴシック','Noto Sans JP',"Meiryo","メイリオ","ＭＳ Ｐゴシック",sans-serif;
+    font-size: 14px;
+    line-height: 1.77;
+    color: #282b30;
+    -webkit-text-size-adjust: 100%;
+    background-color: #fff;
+}
+#mypage .mypage-navi .inner ul li {
+    width: 25%;
+}
+#mypage .mypage-navi .inner ul li a{
+    outline: none;
+}
+#mypage .event-information .event-navi ul li > *{
+    height: auto;
+    line-height: 16px;
+}
+/*
+#page-title {
+    margin-bottom: 0 !important;
+}
+*/
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+.show{
+    display: block !important;
+}
+.show-time {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.fm-submit {
+    border: 1px #ccc dashed;
+    color: #000;
+    display: inline-block;
+    line-height: normal;
+    font-weight: normal;
+    padding: 6px 0;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.total-list ul li{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    line-height: normal;
+    vertical-align: middle;
+}
+.total-list ul li span:nth-child(1){
+    font-weight: 600;
+    width: 12%;
+    float: left;
+}
+.total-list ul li span:nth-child(2){
+    float: left;
+}
+.fm-checking{
+    float: left;
+}
+.fm-checking li, .radio-checking li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.fm-checking li:first-child, .radio-checking li:first-child{
+    margin-left: 0;
+}
+input[type="radio"]{
+    height: 1.2rem;
+    width: 1.2rem;
+    vertical-align: middle;
+    margin: 0 0.4rem 0.4rem 0;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-transition: box-shadow 200ms;
+    position: relative;
+    top: 2px;
+}
+input[type="radio"] {
+    -webkit-border-radius:100%;
+    border-radius:100%;
+}
+input[type="radio"]:checked:before {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+    content: '';
+    display: block;
+    height: 0.3rem;
+    width: 0.3rem;
+    position: relative;
+    left: 0.4rem;
+    top: 0.4rem;
+}
+.total-list ul li span .fs-list, .total-list ul li span textarea {
+    border: 1px #ccc solid;
+    height: auto;
+    padding: 4px 12px;
+    width: 232px;
+}
+.total-list ul li span textarea{
+    height: 72px;
+}
+.content-total, .content-alias{
+    margin: auto;
+    width: 52%;
+}
+.tooltip{
+    position:absolute;
+    left:-2000px;
+    background-color:#dedede;
+    padding:5px;
+    border:1px solid #fff;
+    width:320px;
+    z-index: 9999;
+}
+.tooltip p{
+    margin:0;
+    padding:0;
+    color:#fff;
+    background-color:#222;
+    padding:10px 10px;
+    width:100%;
+}
+#title-subs p{
+    line-height: normal;
+    margin: 4px 0;
+}
+/*#user-registration .form-wrap dl dt{
+    width: 200px;
+}*/
+.cs-box{
+    display: inline-block;
+    width: 16%;
+}
+.clearfix dd .cs-box:nth-of-type(n+6) {
+    margin-bottom: 15px;
+}
+.clearfix dd .radio:nth-of-type(n+7){
+    margin-top: 15px;
+}
+.clearfix dd .radio:nth-of-type(n+7) + span{
+    position: relative;
+    top: 8px;
+}
+input[type="checkbox"] + label:before{
+    background-color: #f3f6f8;
+    border: 1px solid #dee1e5;
+    height: 18px;
+    width: 18px;
+}
+input[type="checkbox"] + label:hover:before{
+    border-color: #53b300;
+}
+input[type="checkbox"]:checked + label:before{
+    border-color: #53b300;
+    color: #FFFFFF;
+    line-height: 22px;
+    background: url("../img/common/icon_check.svg") no-repeat center center;
+}
+#user-registration .form-wrap dl dd textarea.custom-wd{
+    width: 440px;
+}
+
+.custom-list .radio{
+    margin: 10px 0;
+    vertical-align: bottom;
+}
+
+/*****************************************************
+                UPDATE DAY 29/09/2017
+******************************************************/
+.fm-privacy-container{
+    width: 760px;
+    height: 300px;
+    margin: 30px auto 50px auto;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid #e4e4e3;
+}
+.fm-privacy-container .title {
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 23px;
+    font-weight: bold;
+    position: relative;
+}
+.fm-privacy-container .title:before {
+    width: 10px;
+    height: 7px;
+}
+.fm-privacy-container .title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #669d11;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+}
+.fm-content-swap .radio{
+    margin: 10px 0;
+    font-weight: normal;
+}
+/*#user-registration .form-wrap dl .cs-wid {
+    width: 224px;
+}*/
+/*#user-registration .form-wrap dl dd select{
+    font-size: 1.2rem;
+}*/
+.fm-note{
+    font-weight: bold;
+}
+.fm-infotext li, .fm-infotext li ul ol{
+    line-height: 1.67;
+}
+.fm-infotext li{
+    padding-left: 10px;
+}
+.fm-infotext li ul ol{
+    padding-left: 20px;
+}
+.fm-cusrow li{
+    display: inline-block;
+}
+.fm-cusrow li span{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+}
+#user-registration .form-wrap dl dd input.w340{
+    width: 340px;
+}
+.wid-radio .radio{
+    width: 170px;
+}
+.w194{
+    width: 194px;
+}
+.fm-custom-day li:nth-child(2){
+    width: 8.3%;
+}
+.fm-custom-day li:nth-child(2) span{
+    position: relative;
+    bottom: 15px;
+}
+#user-registration .form-wrap dl dd{
+    line-height: 1.8;
+}
+ #user-registration .form-wrap dl dd select{
+    font-size: 14px;
+ }
+
+/*****************************************************
+                UPDATE DAY 10/10/2017
+******************************************************/
+.fm-smit{
+    background-color: rgb(235, 235, 228);
+    border: 1px solid #a9a9a9;
+    color: rgb(84, 84, 84);
+    padding: 0 15px;
+}
+ #user-registration .form-wrap dl dd input.wid-80{
+    width: 80px;
+ }
+@media screen and (max-width: 1024px){
+    .section-container .section-inner{
+        width: 100%;
+    }
+    .fm-custom-day li:nth-child(2){
+        width: 8.3%;
+    }
+    .fm-custom-day li:nth-child(2) span{
+        position: relative;
+        bottom: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content-total{
+        width: 38%;
+    }
+    #user-registration .form-wrap dl dd .radio:nth-of-type(n+3){
+        margin-top: auto;
+    }
+    .cs-box {
+        width: 19%;
+    }
+    #user-registration .form-wrap dl dd input.wid-80 {
+        width: 84px;
+    }
+   /*  #user-registration .form-wrap dl dd textarea.custom-wd {
+        width: 100%;
+    }*/
+    /*.radio:before, .checkbox:before{
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }*/
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+    .section-container .section-inner, .fm-privacy-container{
+        width: 100%;
+    }
+    .fm-content-swap .radio:after{
+        height: 18px;
+        width: 18px;
+    }
+    .fm-cusrow{
+        display: flex;
+    }
+    .fm-cusrow li span{
+        position: relative;
+        top: 10px;
+    }
+    .fm-custom-day li:nth-child(2){
+        width: 10%;
+    }
+    /*#user-registration .form-wrap dl dd input.wid-80{
+        width: 65%;
+    }*/
+    /*#user-registration .form-wrap dl dd input.wid-100, #user-registration .form-wrap dl dd .select.wid-100{
+        width: 100%;
+    }*/
+    /*.fm-content-swap .radio{
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding-left: 25px;
+    }*/
+}
+
+@media screen and (max-width: 480px){
+    .btn {
+        margin: auto;
+        padding: 0;
+    }
+    .radio:before, .checkbox:before{
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }
+    #user-registration .form-wrap dl dd input.w340, #user-registration .form-wrap dl dd .select.smp-half {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .fm-checking li, .radio-checking li{
+        display: block;
+        margin: auto auto 10px auto;
+    }
+    .content-total, .content-alias{
+        width: 92%;
+    }
+    .custom-list .radio, .checkbox-container > .wpcf7-list-item{
+        width: 100%;
+        padding-left: 35px;
+    }
+    .custom-list .radio:after{
+        width: 18px;
+        height: 18px;
+        margin-top: -18px;
+    }
+    .radio:before, .checkbox:before{
+        left: 6px;
+        margin-top: -12px;
+        width: 8px;
+        height: 8px;
+    }
+    .cs-box {
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+    }
+    input[type="checkbox"] + label:before{
+        margin-right: 15px;
+    }
+    .clearfix dd .radio:nth-of-type(n+7) + span{
+        top: 0;
+    }
+    .clearfix .text{
+        margin-bottom: 10px;
+    }
+    #request-event-container .event-item .detail-box .status{
+        margin-top: auto;
+        line-height: normal;
+    }
+    #request-event-container .event-item .detail-box .title{
+        font-size: 14px;
+    }
+    #user-registration .form-wrap dl dd textarea.custom-wd, .fm-privacy-container {
+        width: 100%;
+    }
+    .custom-list .radio {
+        margin: auto;
+    }
+    .fm-cusrow{
+        display: flex;
+    }
+    .fm-cusrow li{
+        display: inline-block;
+    }
+    .fm-cusrow li span{
+        top: 12px;
+        position: relative;
+    }
+    .fm-custom-day{
+        display: inline;
+    }
+    .fm-custom-day li{
+        float: left;
+        display: block;
+    }
+    .fm-custom-day li .w194{
+        margin: auto !important;
+    }
+    .fm-custom-day li:nth-child(2){
+        width: 10%;
+    }
+    .fm-custom-day li:nth-child(1), .fm-custom-day li:nth-child(3){
+        width: 45%;
+    }
+    #user-registration .form-wrap dl dd input.wid-100, #user-registration .form-wrap dl dd .select.wid-100{
+        width: 100%;
+    }
+}
+
+/*************************************************************
+Update 2017/12/08
+Make Mypage Navigator break line on smartphone
+*/
+@media screen and (max-width: 768px) {
+  #mypage .mypage-navi .inner ul li {
+      width: 50%;
+      border: 1px #aaa solid; 
+  }
+  #mypage .mypage-navi .inner ul li.active a:after {
+      display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  #mypage .mypage-navi .inner ul li {
+      width: 100%;
+      border: 1px #aaa solid;
+  }
+  #mypage .mypage-navi .inner ul li.active a:after {
+      display: none;
+  }
+}

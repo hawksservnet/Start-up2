@@ -1,0 +1,53 @@
+	.calendar-box {
+		display:none;
+		background-color:#fff;
+		border:1px solid #444;
+		position:absolute;
+		width:auto;
+        /*
+		padding: 0 5px;
+        */
+		z-index: 10;
+	}
+	.calendar-box select.calendar-month {
+		width:60px;
+		color: #000;
+        margin-right: 3px;
+	}
+	.calendar-box select.calendar-year {
+		width:70px;
+		color: #000;
+	}
+	.calendar-box .calendar-cancel {
+		width:40%;
+		float: right;
+        margin: 5px;
+	}
+	.calendar-box .calendar-remove {
+		width:40%;
+        margin: 5px;
+	}
+	.calendar-box table td {
+		width:14%;
+        color: #ddd;
+	}
+	.calendar-box .calendar-title {
+		text-align:center;
+		width: 200px;
+	}
+	.calendar-box a {
+		text-decoration:none;
+	}
+	.calendar-box .today a {
+		padding:0 5px;
+		margin-left:-5px;
+		background-color:#ffe9c6;
+	}
+	.calendar-box .selected a {
+		padding:0 5px;
+		margin-left:-5px;
+		background-color:#c9ff8b;
+	}
+	#creDate{
+		width: 40%;
+	}

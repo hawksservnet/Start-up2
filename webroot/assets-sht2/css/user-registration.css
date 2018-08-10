@@ -1,0 +1,847 @@
+@charset "UTF-8";
+/* [ variable ]
+-------------------------------------------------*/
+/* font */
+/* font */
+/*  */
+/* [ font style ]
+-------------------------------------------------*/
+/* [ opacity ]
+-------------------------------------------------*/
+/* [ blur ]
+-------------------------------------------------*/
+/* [ radius ]
+-------------------------------------------------*/
+/* [ easing ]
+-------------------------------------------------*/
+/* [ transform ]
+-------------------------------------------------*/
+/* [ layout ]
+-------------------------------------------------*/
+/* #
+-------------------------------------------------- */
+#user-registration.section-container,
+#preentre.section-container {
+  margin-top: 0 !important; }
+
+#confirm .contact-container, #application .contact-container, #user-registration .contact-container, #user-registration-body .contact-container, #preentre .contact-container {
+  background-color: #f3f2f0; }
+  #confirm .contact-container dl dt, #application .contact-container dl dt, #user-registration .contact-container dl dt, #user-registration-body .contact-container dl dt, #preentre .contact-container dl dt {
+    background-color: #e6e3dd; }
+    #confirm .contact-container dl dt > *, #application .contact-container dl dt > *, #user-registration .contact-container dl dt > *, #user-registration-body .contact-container dl dt > *, #preentre .contact-container dl dt > * {
+      display: inline-block;
+      vertical-align: middle; }
+    #confirm .contact-container dl dt .text, #application .contact-container dl dt .text, #user-registration .contact-container dl dt .text, #user-registration-body .contact-container dl dt .text, #preentre .contact-container dl dt .text {
+      font-weight: bold; }
+  #confirm .contact-container dl dd .icon img, #application .contact-container dl dd .icon img, #user-registration .contact-container dl dd .icon img, #user-registration-body .contact-container dl dd .icon img, #preentre .contact-container dl dd .icon img {
+    display: block; }
+  #confirm .contact-container dl dd .text .bold, #application .contact-container dl dd .text .bold, #user-registration .contact-container dl dd .text .bold, #user-registration-body .contact-container dl dd .text .bold, #preentre .contact-container dl dd .text .bold {
+    font-weight: bold; }
+  #confirm .contact-container dl dd .link a, #application .contact-container dl dd .link a, #user-registration .contact-container dl dd .link a, #user-registration-body .contact-container dl dd .link a, #preentre .contact-container dl dd .link a {
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none; }
+
+#confirm #progress-navi li, #application #progress-navi li, #user-registration #progress-navi li, #user-registration-body #progress-navi li, #preentre #progress-navi li {
+  position: relative; }
+  #confirm #progress-navi li > span, #application #progress-navi li > span, #user-registration #progress-navi li > span, #user-registration-body #progress-navi li > span, #preentre #progress-navi li > span {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    text-align: center; }
+    #confirm #progress-navi li > span .en, #application #progress-navi li > span .en, #user-registration #progress-navi li > span .en, #user-registration-body #progress-navi li > span .en, #preentre #progress-navi li > span .en {
+      font-family: 'Roboto Condensed';
+      font-weight: 700;
+      letter-spacing: 0.1em; }
+  #confirm #progress-navi li:before, #application #progress-navi li:before, #user-registration #progress-navi li:before, #user-registration-body #progress-navi li:before, #preentre #progress-navi li:before {
+    content: "";
+    display: block;
+    position: absolute; }
+  #confirm #progress-navi li:before, #application #progress-navi li:before, #user-registration #progress-navi li:before, #user-registration-body #progress-navi li:before, #preentre #progress-navi li:before {
+    background-color: #b4b4ba;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    width: 100px;
+    height: 100px; }
+  #confirm #progress-navi li.current:before, #application #progress-navi li.current:before, #user-registration #progress-navi li.current:before, #user-registration-body #progress-navi li.current:before, #preentre #progress-navi li.current:before {
+    background-color: #669d11; }
+
+#confirm .lead a, #application .lead a, #user-registration .lead a, #user-registration-body .lead a, #preentre .lead a {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  display: block;
+  color: #669d11;
+  /* &:hover{
+				text-decoration: none;
+			} */ }
+
+#confirm .screen-reader-response, #application .screen-reader-response, #user-registration .screen-reader-response, #user-registration-body .screen-reader-response, #preentre .screen-reader-response {
+  width: 100%;
+  height: auto;
+  position: static;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: #669d11;
+  font-weight: bold; }
+
+#confirm .form-wrap *, #application .form-wrap *, #user-registration .form-wrap *, #user-registration-body .form-wrap *, #preentre .form-wrap * {
+  word-break: break-all; }
+
+#confirm .form-wrap dl dt, #application .form-wrap dl dt, #user-registration .form-wrap dl dt, #user-registration-body .form-wrap dl dt, #preentre .form-wrap dl dt {
+  font-weight: bold; }
+  #confirm .form-wrap dl dt.required:after, #application .form-wrap dl dt.required:after, #user-registration .form-wrap dl dt.required:after, #user-registration-body .form-wrap dl dt.required:after, #preentre .form-wrap dl dt.required:after {
+    content: "必須";
+    border: 1px solid #669d11;
+    color: #669d11;
+    text-align: center;
+    font-size: 10px;
+    vertical-align: middle; }
+
+#confirm .form-wrap dl dd .select .wpcf7-form-control-wrap, #application .form-wrap dl dd .select .wpcf7-form-control-wrap, #user-registration .form-wrap dl dd .select .wpcf7-form-control-wrap, #user-registration-body .form-wrap dl dd .select .wpcf7-form-control-wrap, #preentre .form-wrap dl dd .select .wpcf7-form-control-wrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1; }
+
+#confirm .form-wrap dl dd .wpcf7-form-control-wrap + br, #application .form-wrap dl dd .wpcf7-form-control-wrap + br, #user-registration .form-wrap dl dd .wpcf7-form-control-wrap + br, #user-registration-body .form-wrap dl dd .wpcf7-form-control-wrap + br, #preentre .form-wrap dl dd .wpcf7-form-control-wrap + br {
+  display: none; }
+
+#confirm .form-wrap dl dd br, #application .form-wrap dl dd br, #user-registration .form-wrap dl dd br, #user-registration-body .form-wrap dl dd br, #preentre .form-wrap dl dd br {
+  display: none; }
+
+#confirm .form-wrap dl dd .br-m15, #application .form-wrap dl dd .br-m15, #user-registration .form-wrap dl dd .br-m15, #user-registration-body .form-wrap dl dd .br-m15, #preentre .form-wrap dl dd .br-m15 {
+  display: block;
+  height: 15px; }
+
+#confirm .form-wrap dl dd input,
+#confirm .form-wrap dl dd select,
+#confirm .form-wrap dl dd textarea, #application .form-wrap dl dd input,
+#application .form-wrap dl dd select,
+#application .form-wrap dl dd textarea, #user-registration .form-wrap dl dd input,
+#user-registration .form-wrap dl dd select,
+#user-registration .form-wrap dl dd textarea, #user-registration-body .form-wrap dl dd input,
+#user-registration-body .form-wrap dl dd select,
+#user-registration-body .form-wrap dl dd textarea, #preentre .form-wrap dl dd input,
+#preentre .form-wrap dl dd select,
+#preentre .form-wrap dl dd textarea {
+  width: 100%; }
+  #confirm .form-wrap dl dd input.error,
+  #confirm .form-wrap dl dd select.error,
+  #confirm .form-wrap dl dd textarea.error, #application .form-wrap dl dd input.error,
+  #application .form-wrap dl dd select.error,
+  #application .form-wrap dl dd textarea.error, #user-registration .form-wrap dl dd input.error,
+  #user-registration .form-wrap dl dd select.error,
+  #user-registration .form-wrap dl dd textarea.error, #user-registration-body .form-wrap dl dd input.error,
+  #user-registration-body .form-wrap dl dd select.error,
+  #user-registration-body .form-wrap dl dd textarea.error, #preentre .form-wrap dl dd input.error,
+  #preentre .form-wrap dl dd select.error,
+  #preentre .form-wrap dl dd textarea.error {
+    background-color: #ffe1e7; }
+
+#confirm .form-wrap dl dd input,
+#confirm .form-wrap dl dd select, #application .form-wrap dl dd input,
+#application .form-wrap dl dd select, #user-registration .form-wrap dl dd input,
+#user-registration .form-wrap dl dd select, #user-registration-body .form-wrap dl dd input,
+#user-registration-body .form-wrap dl dd select, #preentre .form-wrap dl dd input,
+#preentre .form-wrap dl dd select {
+  height: 40px;
+  line-height: 40px; }
+
+#confirm .form-wrap dl dd select, #application .form-wrap dl dd select, #user-registration .form-wrap dl dd select, #user-registration-body .form-wrap dl dd select, #preentre .form-wrap dl dd select {
+  font-size: 16px; }
+
+#confirm .form-wrap dl dd textarea, #application .form-wrap dl dd textarea, #user-registration .form-wrap dl dd textarea, #user-registration-body .form-wrap dl dd textarea, #preentre .form-wrap dl dd textarea {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#confirm .form-wrap dl dd .caution-text, #application .form-wrap dl dd .caution-text, #user-registration .form-wrap dl dd .caution-text, #user-registration-body .form-wrap dl dd .caution-text, #preentre .form-wrap dl dd .caution-text {
+  font-weight: bold; }
+
+#confirm .form-wrap dl dd .conf-list, #application .form-wrap dl dd .conf-list, #user-registration .form-wrap dl dd .conf-list, #user-registration-body .form-wrap dl dd .conf-list, #preentre .form-wrap dl dd .conf-list {
+  display: block;
+  margin-top: 3px; }
+  #confirm .form-wrap dl dd .conf-list:first-of-type, #application .form-wrap dl dd .conf-list:first-of-type, #user-registration .form-wrap dl dd .conf-list:first-of-type, #user-registration-body .form-wrap dl dd .conf-list:first-of-type, #preentre .form-wrap dl dd .conf-list:first-of-type {
+    margin-top: 0; }
+
+#confirm .form-wrap dl dd .member-problem:before, #application .form-wrap dl dd .member-problem:before, #user-registration .form-wrap dl dd .member-problem:before, #user-registration-body .form-wrap dl dd .member-problem:before, #preentre .form-wrap dl dd .member-problem:before {
+  content: "‐";
+  display: inline-block;
+  margin-right: 2px; }
+
+#confirm .form-wrap dl span.error, #application .form-wrap dl span.error, #user-registration .form-wrap dl span.error, #user-registration-body .form-wrap dl span.error, #preentre .form-wrap dl span.error {
+  color: #ff546f;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  clear: both; }
+
+#confirm .form-wrap dl.top dt, #application .form-wrap dl.top dt, #user-registration .form-wrap dl.top dt, #user-registration-body .form-wrap dl.top dt, #preentre .form-wrap dl.top dt {
+  vertical-align: top; }
+
+#confirm .form-wrap.confirm dl, #application .form-wrap.confirm dl, #user-registration .form-wrap.confirm dl, #user-registration-body .form-wrap.confirm dl, #preentre .form-wrap.confirm dl {
+  border-bottom: 1px solid #e4e4e3; }
+  #confirm .form-wrap.confirm dl:first-child, #application .form-wrap.confirm dl:first-child, #user-registration .form-wrap.confirm dl:first-child, #user-registration-body .form-wrap.confirm dl:first-child, #preentre .form-wrap.confirm dl:first-child {
+    border-top: 1px solid #e4e4e3; }
+
+#confirm .form-wrap.complete, #application .form-wrap.complete, #user-registration .form-wrap.complete, #user-registration-body .form-wrap.complete, #preentre .form-wrap.complete {
+  border-top: 1px solid #e4e4e3;
+  border-bottom: 1px solid #e4e4e3;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  #confirm .form-wrap.complete .title, #application .form-wrap.complete .title, #user-registration .form-wrap.complete .title, #user-registration-body .form-wrap.complete .title, #preentre .form-wrap.complete .title {
+    font-weight: bold;
+    text-align: center; }
+
+#confirm #privacy-check span.error, #application #privacy-check span.error, #user-registration #privacy-check span.error, #user-registration-body #privacy-check span.error, #preentre #privacy-check span.error {
+  color: #ff546f;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px; }
+
+#confirm .btn br, #application .btn br, #user-registration .btn br, #user-registration-body .btn br, #preentre .btn br {
+  display: none; }
+
+/* PC =================================== */
+/* PC　ALL */
+@media only all and (min-width: 751px) {
+  #confirm, #application, #user-registration, #user-registration-body, #preentre {
+    margin-top: 80px; }
+    #confirm .contact-container, #application .contact-container, #user-registration .contact-container, #user-registration-body .contact-container, #preentre .contact-container {
+      margin-bottom: 70px; }
+      #confirm .contact-container dl > *, #application .contact-container dl > *, #user-registration .contact-container dl > *, #user-registration-body .contact-container dl > *, #preentre .contact-container dl > * {
+        display: table-cell; }
+      #confirm .contact-container dl dt, #application .contact-container dl dt, #user-registration .contact-container dl dt, #user-registration-body .contact-container dl dt, #preentre .contact-container dl dt {
+        width: 290px;
+        padding: 30px 0 30px 50px; }
+        #confirm .contact-container dl dt > *, #application .contact-container dl dt > *, #user-registration .contact-container dl dt > *, #user-registration-body .contact-container dl dt > *, #preentre .contact-container dl dt > * {
+          line-height: 36px; }
+        #confirm .contact-container dl dt .icon, #application .contact-container dl dt .icon, #user-registration .contact-container dl dt .icon, #user-registration-body .contact-container dl dt .icon, #preentre .contact-container dl dt .icon {
+          padding-right: 15px; }
+          #confirm .contact-container dl dt .icon img, #application .contact-container dl dt .icon img, #user-registration .contact-container dl dt .icon img, #user-registration-body .contact-container dl dt .icon img, #preentre .contact-container dl dt .icon img {
+            width: 36px;
+            height: 36px; }
+        #confirm .contact-container dl dt .text, #application .contact-container dl dt .text, #user-registration .contact-container dl dt .text, #user-registration-body .contact-container dl dt .text, #preentre .contact-container dl dt .text {
+          font-size: 16px; }
+      #confirm .contact-container dl dd > *, #application .contact-container dl dd > *, #user-registration .contact-container dl dd > *, #user-registration-body .contact-container dl dd > *, #preentre .contact-container dl dd > * {
+        display: inline-block;
+        line-height: 34px;
+        vertical-align: middle; }
+      #confirm .contact-container dl dd .link, #application .contact-container dl dd .link, #user-registration .contact-container dl dd .link, #user-registration-body .contact-container dl dd .link, #preentre .contact-container dl dd .link {
+        margin-left: 45px;
+        margin-right: 35px; }
+        #confirm .contact-container dl dd .link a, #application .contact-container dl dd .link a, #user-registration .contact-container dl dd .link a, #user-registration-body .contact-container dl dd .link a, #preentre .contact-container dl dd .link a {
+          font-size: 34px;
+          vertical-align: middle; }
+      #confirm .contact-container dl dd .text, #application .contact-container dl dd .text, #user-registration .contact-container dl dd .text, #user-registration-body .contact-container dl dd .text, #preentre .contact-container dl dd .text {
+        margin-right: 15px; }
+    #confirm #progress-navi, #application #progress-navi, #user-registration #progress-navi, #user-registration-body #progress-navi, #preentre #progress-navi {
+      margin-bottom: 85px;
+      text-align: center; }
+      #confirm #progress-navi li, #application #progress-navi li, #user-registration #progress-navi li, #user-registration-body #progress-navi li, #preentre #progress-navi li {
+        margin: 0 12px;
+        display: inline-block; }
+        #confirm #progress-navi li > span, #application #progress-navi li > span, #user-registration #progress-navi li > span, #user-registration-body #progress-navi li > span, #preentre #progress-navi li > span {
+          height: 35px;
+          line-height: 35px;
+          width: 210px; }
+        #confirm #progress-navi li:before, #application #progress-navi li:before, #user-registration #progress-navi li:before, #user-registration-body #progress-navi li:before, #preentre #progress-navi li:before {
+          width: 210px;
+          height: 35px; }
+        #confirm #progress-navi li:after, #application #progress-navi li:after, #user-registration #progress-navi li:after, #user-registration-body #progress-navi li:after, #preentre #progress-navi li:after {
+          content: "";
+          display: block;
+          position: absolute;
+          background-color: #dee1e5;
+          top: 0;
+          bottom: 0;
+          right: -40px;
+          margin: auto;
+          width: 40px;
+          height: 1px; }
+        #confirm #progress-navi li:last-child:after, #application #progress-navi li:last-child:after, #user-registration #progress-navi li:last-child:after, #user-registration-body #progress-navi li:last-child:after, #preentre #progress-navi li:last-child:after {
+          display: none; }
+        #confirm #progress-navi li.current:after, #application #progress-navi li.current:after, #user-registration #progress-navi li.current:after, #user-registration-body #progress-navi li.current:after, #preentre #progress-navi li.current:after {
+          background-color: #669d11; }
+    #confirm .screen-reader-response, #application .screen-reader-response, #user-registration .screen-reader-response, #user-registration-body .screen-reader-response, #preentre .screen-reader-response {
+      width: 710px; }
+    #confirm .lead, #application .lead, #user-registration .lead, #user-registration-body .lead, #preentre .lead {
+      margin-bottom: 60px; }
+      #confirm .lead a, #application .lead a, #user-registration .lead a, #user-registration-body .lead a, #preentre .lead a {
+        margin-top: 5px; }
+      #confirm .lead.center, #application .lead.center, #user-registration .lead.center, #user-registration-body .lead.center, #preentre .lead.center {
+        text-align: center; }
+    #confirm .form-wrap, #application .form-wrap, #user-registration .form-wrap, #user-registration-body .form-wrap, #preentre .form-wrap {
+      width: 760px;
+      margin-left: auto;
+      margin-right: auto; }
+      #confirm .form-wrap dl, #application .form-wrap dl, #user-registration .form-wrap dl, #user-registration-body .form-wrap dl, #preentre .form-wrap dl {
+        display: table;
+        width: 100%;
+        margin-top: 30px; }
+        #confirm .form-wrap dl.mt-half, #application .form-wrap dl.mt-half, #user-registration .form-wrap dl.mt-half, #user-registration-body .form-wrap dl.mt-half, #preentre .form-wrap dl.mt-half {
+          margin-top: 15px; }
+        #confirm .form-wrap dl:first-child, #application .form-wrap dl:first-child, #user-registration .form-wrap dl:first-child, #user-registration-body .form-wrap dl:first-child, #preentre .form-wrap dl:first-child {
+          margin-top: 0; }
+        #confirm .form-wrap dl dt,
+        #confirm .form-wrap dl dd, #application .form-wrap dl dt,
+        #application .form-wrap dl dd, #user-registration .form-wrap dl dt,
+        #user-registration .form-wrap dl dd, #user-registration-body .form-wrap dl dt,
+        #user-registration-body .form-wrap dl dd, #preentre .form-wrap dl dt,
+        #preentre .form-wrap dl dd {
+          display: table-cell;
+          line-height: 1.47; }
+        #confirm .form-wrap dl dt, #application .form-wrap dl dt, #user-registration .form-wrap dl dt, #user-registration-body .form-wrap dl dt, #preentre .form-wrap dl dt {
+          width: 240px;
+          vertical-align: middle;
+          position: relative; }
+          #confirm .form-wrap dl dt.required:after, #application .form-wrap dl dt.required:after, #user-registration .form-wrap dl dt.required:after, #user-registration-body .form-wrap dl dt.required:after, #preentre .form-wrap dl dt.required:after {
+            display: inline-block;
+            width: 29px;
+            height: 18px;
+            line-height: 18px;
+            float: right;
+            margin-right: 40px; }
+          #confirm .form-wrap dl dt span, #application .form-wrap dl dt span, #user-registration .form-wrap dl dt span, #user-registration-body .form-wrap dl dt span, #preentre .form-wrap dl dt span {
+            display: block;
+            font-size: 12px; }
+        #confirm .form-wrap dl dd .placeholder, #application .form-wrap dl dd .placeholder, #user-registration .form-wrap dl dd .placeholder, #user-registration-body .form-wrap dl dd .placeholder, #preentre .form-wrap dl dd .placeholder {
+          display: none; }
+        #confirm .form-wrap dl dd input,
+        #confirm .form-wrap dl dd .select,
+        #confirm .form-wrap dl dd textarea, #application .form-wrap dl dd input,
+        #application .form-wrap dl dd .select,
+        #application .form-wrap dl dd textarea, #user-registration .form-wrap dl dd input,
+        #user-registration .form-wrap dl dd .select,
+        #user-registration .form-wrap dl dd textarea, #user-registration-body .form-wrap dl dd input,
+        #user-registration-body .form-wrap dl dd .select,
+        #user-registration-body .form-wrap dl dd textarea, #preentre .form-wrap dl dd input,
+        #preentre .form-wrap dl dd .select,
+        #preentre .form-wrap dl dd textarea {
+          margin-top: 15px; }
+          #confirm .form-wrap dl dd input.half, #confirm .form-wrap dl dd input.w150, #confirm .form-wrap dl dd input.w160, #confirm .form-wrap dl dd input.w180, #confirm .form-wrap dl dd input.w210,
+          #confirm .form-wrap dl dd .select.half,
+          #confirm .form-wrap dl dd .select.w150,
+          #confirm .form-wrap dl dd .select.w160,
+          #confirm .form-wrap dl dd .select.w180,
+          #confirm .form-wrap dl dd .select.w210,
+          #confirm .form-wrap dl dd textarea.half,
+          #confirm .form-wrap dl dd textarea.w150,
+          #confirm .form-wrap dl dd textarea.w160,
+          #confirm .form-wrap dl dd textarea.w180,
+          #confirm .form-wrap dl dd textarea.w210, #application .form-wrap dl dd input.half, #application .form-wrap dl dd input.w150, #application .form-wrap dl dd input.w160, #application .form-wrap dl dd input.w180, #application .form-wrap dl dd input.w210,
+          #application .form-wrap dl dd .select.half,
+          #application .form-wrap dl dd .select.w150,
+          #application .form-wrap dl dd .select.w160,
+          #application .form-wrap dl dd .select.w180,
+          #application .form-wrap dl dd .select.w210,
+          #application .form-wrap dl dd textarea.half,
+          #application .form-wrap dl dd textarea.w150,
+          #application .form-wrap dl dd textarea.w160,
+          #application .form-wrap dl dd textarea.w180,
+          #application .form-wrap dl dd textarea.w210, #user-registration .form-wrap dl dd input.half, #user-registration .form-wrap dl dd input.w150, #user-registration .form-wrap dl dd input.w160, #user-registration .form-wrap dl dd input.w180, #user-registration .form-wrap dl dd input.w210,
+          #user-registration .form-wrap dl dd .select.half,
+          #user-registration .form-wrap dl dd .select.w150,
+          #user-registration .form-wrap dl dd .select.w160,
+          #user-registration .form-wrap dl dd .select.w180,
+          #user-registration .form-wrap dl dd .select.w210,
+          #user-registration .form-wrap dl dd textarea.half,
+          #user-registration .form-wrap dl dd textarea.w150,
+          #user-registration .form-wrap dl dd textarea.w160,
+          #user-registration .form-wrap dl dd textarea.w180,
+          #user-registration .form-wrap dl dd textarea.w210, #user-registration-body .form-wrap dl dd input.half, #user-registration-body .form-wrap dl dd input.w150, #user-registration-body .form-wrap dl dd input.w160, #user-registration-body .form-wrap dl dd input.w180, #user-registration-body .form-wrap dl dd input.w210,
+          #user-registration-body .form-wrap dl dd .select.half,
+          #user-registration-body .form-wrap dl dd .select.w150,
+          #user-registration-body .form-wrap dl dd .select.w160,
+          #user-registration-body .form-wrap dl dd .select.w180,
+          #user-registration-body .form-wrap dl dd .select.w210,
+          #user-registration-body .form-wrap dl dd textarea.half,
+          #user-registration-body .form-wrap dl dd textarea.w150,
+          #user-registration-body .form-wrap dl dd textarea.w160,
+          #user-registration-body .form-wrap dl dd textarea.w180,
+          #user-registration-body .form-wrap dl dd textarea.w210, #preentre .form-wrap dl dd input.half, #preentre .form-wrap dl dd input.w150, #preentre .form-wrap dl dd input.w160, #preentre .form-wrap dl dd input.w180, #preentre .form-wrap dl dd input.w210,
+          #preentre .form-wrap dl dd .select.half,
+          #preentre .form-wrap dl dd .select.w150,
+          #preentre .form-wrap dl dd .select.w160,
+          #preentre .form-wrap dl dd .select.w180,
+          #preentre .form-wrap dl dd .select.w210,
+          #preentre .form-wrap dl dd textarea.half,
+          #preentre .form-wrap dl dd textarea.w150,
+          #preentre .form-wrap dl dd textarea.w160,
+          #preentre .form-wrap dl dd textarea.w180,
+          #preentre .form-wrap dl dd textarea.w210 {
+            display: inline-block;
+            margin-top: 0;
+            margin-left: 15px; }
+          #confirm .form-wrap dl dd input.half,
+          #confirm .form-wrap dl dd .select.half,
+          #confirm .form-wrap dl dd textarea.half, #application .form-wrap dl dd input.half,
+          #application .form-wrap dl dd .select.half,
+          #application .form-wrap dl dd textarea.half, #user-registration .form-wrap dl dd input.half,
+          #user-registration .form-wrap dl dd .select.half,
+          #user-registration .form-wrap dl dd textarea.half, #user-registration-body .form-wrap dl dd input.half,
+          #user-registration-body .form-wrap dl dd .select.half,
+          #user-registration-body .form-wrap dl dd textarea.half, #preentre .form-wrap dl dd input.half,
+          #preentre .form-wrap dl dd .select.half,
+          #preentre .form-wrap dl dd textarea.half {
+            width: 250px; }
+          #confirm .form-wrap dl dd input.w150,
+          #confirm .form-wrap dl dd .select.w150,
+          #confirm .form-wrap dl dd textarea.w150, #application .form-wrap dl dd input.w150,
+          #application .form-wrap dl dd .select.w150,
+          #application .form-wrap dl dd textarea.w150, #user-registration .form-wrap dl dd input.w150,
+          #user-registration .form-wrap dl dd .select.w150,
+          #user-registration .form-wrap dl dd textarea.w150, #user-registration-body .form-wrap dl dd input.w150,
+          #user-registration-body .form-wrap dl dd .select.w150,
+          #user-registration-body .form-wrap dl dd textarea.w150, #preentre .form-wrap dl dd input.w150,
+          #preentre .form-wrap dl dd .select.w150,
+          #preentre .form-wrap dl dd textarea.w150 {
+            width: 150px; }
+          #confirm .form-wrap dl dd input.w160,
+          #confirm .form-wrap dl dd .select.w160,
+          #confirm .form-wrap dl dd textarea.w160, #application .form-wrap dl dd input.w160,
+          #application .form-wrap dl dd .select.w160,
+          #application .form-wrap dl dd textarea.w160, #user-registration .form-wrap dl dd input.w160,
+          #user-registration .form-wrap dl dd .select.w160,
+          #user-registration .form-wrap dl dd textarea.w160, #user-registration-body .form-wrap dl dd input.w160,
+          #user-registration-body .form-wrap dl dd .select.w160,
+          #user-registration-body .form-wrap dl dd textarea.w160, #preentre .form-wrap dl dd input.w160,
+          #preentre .form-wrap dl dd .select.w160,
+          #preentre .form-wrap dl dd textarea.w160 {
+            width: 160px; }
+          #confirm .form-wrap dl dd input.w180,
+          #confirm .form-wrap dl dd .select.w180,
+          #confirm .form-wrap dl dd textarea.w180, #application .form-wrap dl dd input.w180,
+          #application .form-wrap dl dd .select.w180,
+          #application .form-wrap dl dd textarea.w180, #user-registration .form-wrap dl dd input.w180,
+          #user-registration .form-wrap dl dd .select.w180,
+          #user-registration .form-wrap dl dd textarea.w180, #user-registration-body .form-wrap dl dd input.w180,
+          #user-registration-body .form-wrap dl dd .select.w180,
+          #user-registration-body .form-wrap dl dd textarea.w180, #preentre .form-wrap dl dd input.w180,
+          #preentre .form-wrap dl dd .select.w180,
+          #preentre .form-wrap dl dd textarea.w180 {
+            width: 180px; }
+          #confirm .form-wrap dl dd input.w210,
+          #confirm .form-wrap dl dd .select.w210,
+          #confirm .form-wrap dl dd textarea.w210, #application .form-wrap dl dd input.w210,
+          #application .form-wrap dl dd .select.w210,
+          #application .form-wrap dl dd textarea.w210, #user-registration .form-wrap dl dd input.w210,
+          #user-registration .form-wrap dl dd .select.w210,
+          #user-registration .form-wrap dl dd textarea.w210, #user-registration-body .form-wrap dl dd input.w210,
+          #user-registration-body .form-wrap dl dd .select.w210,
+          #user-registration-body .form-wrap dl dd textarea.w210, #preentre .form-wrap dl dd input.w210,
+          #preentre .form-wrap dl dd .select.w210,
+          #preentre .form-wrap dl dd textarea.w210 {
+            width: 210px; }
+          #confirm .form-wrap dl dd input.w346,
+          #confirm .form-wrap dl dd .select.w346,
+          #confirm .form-wrap dl dd textarea.w346, #application .form-wrap dl dd input.w346,
+          #application .form-wrap dl dd .select.w346,
+          #application .form-wrap dl dd textarea.w346, #user-registration .form-wrap dl dd input.w346,
+          #user-registration .form-wrap dl dd .select.w346,
+          #user-registration .form-wrap dl dd textarea.w346, #user-registration-body .form-wrap dl dd input.w346,
+          #user-registration-body .form-wrap dl dd .select.w346,
+          #user-registration-body .form-wrap dl dd textarea.w346, #preentre .form-wrap dl dd input.w346,
+          #preentre .form-wrap dl dd .select.w346,
+          #preentre .form-wrap dl dd textarea.w346 {
+            width: 346px; }
+          #confirm .form-wrap dl dd input.w440,
+          #confirm .form-wrap dl dd .select.w440,
+          #confirm .form-wrap dl dd textarea.w440, #application .form-wrap dl dd input.w440,
+          #application .form-wrap dl dd .select.w440,
+          #application .form-wrap dl dd textarea.w440, #user-registration .form-wrap dl dd input.w440,
+          #user-registration .form-wrap dl dd .select.w440,
+          #user-registration .form-wrap dl dd textarea.w440, #user-registration-body .form-wrap dl dd input.w440,
+          #user-registration-body .form-wrap dl dd .select.w440,
+          #user-registration-body .form-wrap dl dd textarea.w440, #preentre .form-wrap dl dd input.w440,
+          #preentre .form-wrap dl dd .select.w440,
+          #preentre .form-wrap dl dd textarea.w440 {
+            width: 440px; }
+          #confirm .form-wrap dl dd input.w480,
+          #confirm .form-wrap dl dd .select.w480,
+          #confirm .form-wrap dl dd textarea.w480, #application .form-wrap dl dd input.w480,
+          #application .form-wrap dl dd .select.w480,
+          #application .form-wrap dl dd textarea.w480, #user-registration .form-wrap dl dd input.w480,
+          #user-registration .form-wrap dl dd .select.w480,
+          #user-registration .form-wrap dl dd textarea.w480, #user-registration-body .form-wrap dl dd input.w480,
+          #user-registration-body .form-wrap dl dd .select.w480,
+          #user-registration-body .form-wrap dl dd textarea.w480, #preentre .form-wrap dl dd input.w480,
+          #preentre .form-wrap dl dd .select.w480,
+          #preentre .form-wrap dl dd textarea.w480 {
+            width: 480px; }
+          #confirm .form-wrap dl dd input:first-child,
+          #confirm .form-wrap dl dd .select:first-child,
+          #confirm .form-wrap dl dd textarea:first-child, #application .form-wrap dl dd input:first-child,
+          #application .form-wrap dl dd .select:first-child,
+          #application .form-wrap dl dd textarea:first-child, #user-registration .form-wrap dl dd input:first-child,
+          #user-registration .form-wrap dl dd .select:first-child,
+          #user-registration .form-wrap dl dd textarea:first-child, #user-registration-body .form-wrap dl dd input:first-child,
+          #user-registration-body .form-wrap dl dd .select:first-child,
+          #user-registration-body .form-wrap dl dd textarea:first-child, #preentre .form-wrap dl dd input:first-child,
+          #preentre .form-wrap dl dd .select:first-child,
+          #preentre .form-wrap dl dd textarea:first-child {
+            margin-top: 0;
+            margin-left: 0; }
+          #confirm .form-wrap dl dd input.other-text,
+          #confirm .form-wrap dl dd .select.other-text,
+          #confirm .form-wrap dl dd textarea.other-text, #application .form-wrap dl dd input.other-text,
+          #application .form-wrap dl dd .select.other-text,
+          #application .form-wrap dl dd textarea.other-text, #user-registration .form-wrap dl dd input.other-text,
+          #user-registration .form-wrap dl dd .select.other-text,
+          #user-registration .form-wrap dl dd textarea.other-text, #user-registration-body .form-wrap dl dd input.other-text,
+          #user-registration-body .form-wrap dl dd .select.other-text,
+          #user-registration-body .form-wrap dl dd textarea.other-text, #preentre .form-wrap dl dd input.other-text,
+          #preentre .form-wrap dl dd .select.other-text,
+          #preentre .form-wrap dl dd textarea.other-text {
+            display: inline-block;
+            width: 280px;
+            margin: 0 0 0 15px; }
+        #confirm .form-wrap dl dd .unit, #application .form-wrap dl dd .unit, #user-registration .form-wrap dl dd .unit, #user-registration-body .form-wrap dl dd .unit, #preentre .form-wrap dl dd .unit {
+          font-size: 12px;
+          height: 40px;
+          line-height: 40px; }
+          #confirm .form-wrap dl dd .unit.right, #application .form-wrap dl dd .unit.right, #user-registration .form-wrap dl dd .unit.right, #user-registration-body .form-wrap dl dd .unit.right, #preentre .form-wrap dl dd .unit.right {
+            float: right;
+            text-align: right; }
+          #confirm .form-wrap dl dd .unit.left, #application .form-wrap dl dd .unit.left, #user-registration .form-wrap dl dd .unit.left, #user-registration-body .form-wrap dl dd .unit.left, #preentre .form-wrap dl dd .unit.left {
+            margin-left: 20px; }
+        #confirm .form-wrap dl dd .caution-text, #application .form-wrap dl dd .caution-text, #user-registration .form-wrap dl dd .caution-text, #user-registration-body .form-wrap dl dd .caution-text, #preentre .form-wrap dl dd .caution-text {
+          font-size: 12px;
+          margin-top: 5px; }
+        #confirm .form-wrap dl dd .mt-half, #application .form-wrap dl dd .mt-half, #user-registration .form-wrap dl dd .mt-half, #user-registration-body .form-wrap dl dd .mt-half, #preentre .form-wrap dl dd .mt-half {
+          margin-top: 15px; }
+        #confirm .form-wrap dl dd .mt, #application .form-wrap dl dd .mt, #user-registration .form-wrap dl dd .mt, #user-registration-body .form-wrap dl dd .mt, #preentre .form-wrap dl dd .mt {
+          margin-top: 10px; }
+      #confirm .form-wrap.confirm dl, #application .form-wrap.confirm dl, #user-registration .form-wrap.confirm dl, #user-registration-body .form-wrap.confirm dl, #preentre .form-wrap.confirm dl {
+        margin-top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        #confirm .form-wrap.confirm dl dt, #application .form-wrap.confirm dl dt, #user-registration .form-wrap.confirm dl dt, #user-registration-body .form-wrap.confirm dl dt, #preentre .form-wrap.confirm dl dt {
+          padding-top: 0; }
+      #confirm .form-wrap.complete, #application .form-wrap.complete, #user-registration .form-wrap.complete, #user-registration-body .form-wrap.complete, #preentre .form-wrap.complete {
+        margin-top: -15px; }
+        #confirm .form-wrap.complete .title, #application .form-wrap.complete .title, #user-registration .form-wrap.complete .title, #user-registration-body .form-wrap.complete .title, #preentre .form-wrap.complete .title {
+          font-size: 22px;
+          margin-bottom: 15px; }
+        #confirm .form-wrap.complete .text, #application .form-wrap.complete .text, #user-registration .form-wrap.complete .text, #user-registration-body .form-wrap.complete .text, #preentre .form-wrap.complete .text {
+          text-align: center; }
+    #confirm .btn-list, #application .btn-list, #user-registration .btn-list, #user-registration-body .btn-list, #preentre .btn-list {
+      margin-top: 60px;
+      margin-bottom: 90px;
+      height: 70px;
+      text-align: center; }
+      #confirm .btn-list .btn, #application .btn-list .btn, #user-registration .btn-list .btn, #user-registration-body .btn-list .btn, #preentre .btn-list .btn {
+        display: inline-block;
+        margin-left: 13px;
+        margin-right: 13px;
+        vertical-align: middle; }
+  #contact #user-registration .section-inner .section-contents .section-title, #contact #user-registration-body .section-inner .section-contents .section-title, #contact #preentre .section-inner .section-contents .section-title {
+    height: 34px; }
+    #contact #user-registration .section-inner .section-contents .section-title > *, #contact #user-registration-body .section-inner .section-contents .section-title > *, #contact #preentre .section-inner .section-contents .section-title > * {
+      line-height: 34px; }
+    #contact #user-registration .section-inner .section-contents .section-title .en, #contact #user-registration-body .section-inner .section-contents .section-title .en, #contact #preentre .section-inner .section-contents .section-title .en {
+      font-size: 34px; }
+    #contact #user-registration .section-inner .section-contents .section-title .jp, #contact #user-registration-body .section-inner .section-contents .section-title .jp, #contact #preentre .section-inner .section-contents .section-title .jp {
+      font-size: 16px; }
+  #contact #user-registration .section-inner .section-contents .lead, #contact #user-registration-body .section-inner .section-contents .lead, #contact #preentre .section-inner .section-contents .lead {
+    margin-bottom: 30px; }
+  #contact #user-registration .section-inner .section-contents .screen-reader-response, #contact #user-registration-body .section-inner .section-contents .screen-reader-response, #contact #preentre .section-inner .section-contents .screen-reader-response {
+    padding-bottom: 30px; }
+  #preentre .form-wrap.input dl {
+    padding-top: 25px;
+    border-top: 1px solid #e4e4e3; } }
+
+/* PC　サイズ別 */
+/* SMP =================================== */
+@media only all and (max-width: 750px) {
+  #confirm .contact-container, #application .contact-container, #user-registration .contact-container, #user-registration-body .contact-container, #preentre .contact-container {
+    margin-bottom: 70px; }
+    #confirm .contact-container dl > *, #application .contact-container dl > *, #user-registration .contact-container dl > *, #user-registration-body .contact-container dl > *, #preentre .contact-container dl > * {
+      display: block; }
+    #confirm .contact-container dl dt, #application .contact-container dl dt, #user-registration .contact-container dl dt, #user-registration-body .contact-container dl dt, #preentre .contact-container dl dt {
+      padding: 15px 0;
+      text-align: center; }
+      #confirm .contact-container dl dt > *, #application .contact-container dl dt > *, #user-registration .contact-container dl dt > *, #user-registration-body .contact-container dl dt > *, #preentre .contact-container dl dt > * {
+        line-height: 10px;
+        display: inline-block; }
+      #confirm .contact-container dl dt .icon, #application .contact-container dl dt .icon, #user-registration .contact-container dl dt .icon, #user-registration-body .contact-container dl dt .icon, #preentre .contact-container dl dt .icon {
+        padding-right: 15px; }
+        #confirm .contact-container dl dt .icon img, #application .contact-container dl dt .icon img, #user-registration .contact-container dl dt .icon img, #user-registration-body .contact-container dl dt .icon img, #preentre .contact-container dl dt .icon img {
+          width: 20px;
+          height: 20px; }
+      #confirm .contact-container dl dt .text, #application .contact-container dl dt .text, #user-registration .contact-container dl dt .text, #user-registration-body .contact-container dl dt .text, #preentre .contact-container dl dt .text {
+        font-size: 16px; }
+    #confirm .contact-container dl dd, #application .contact-container dl dd, #user-registration .contact-container dl dd, #user-registration-body .contact-container dl dd, #preentre .contact-container dl dd {
+      padding: 20px 0; }
+      #confirm .contact-container dl dd > *, #application .contact-container dl dd > *, #user-registration .contact-container dl dd > *, #user-registration-body .contact-container dl dd > *, #preentre .contact-container dl dd > * {
+        text-align: center; }
+      #confirm .contact-container dl dd .link, #application .contact-container dl dd .link, #user-registration .contact-container dl dd .link, #user-registration-body .contact-container dl dd .link, #preentre .contact-container dl dd .link {
+        display: block; }
+        #confirm .contact-container dl dd .link a, #application .contact-container dl dd .link a, #user-registration .contact-container dl dd .link a, #user-registration-body .contact-container dl dd .link a, #preentre .contact-container dl dd .link a {
+          font-size: 28px;
+          line-height: 28px; }
+      #confirm .contact-container dl dd .text, #application .contact-container dl dd .text, #user-registration .contact-container dl dd .text, #user-registration-body .contact-container dl dd .text, #preentre .contact-container dl dd .text {
+        margin-top: 5px; }
+  #confirm #progress-navi, #application #progress-navi, #user-registration #progress-navi, #user-registration-body #progress-navi, #preentre #progress-navi {
+    margin-bottom: 30px;
+    text-align: center; }
+    #confirm #progress-navi li, #application #progress-navi li, #user-registration #progress-navi li, #user-registration-body #progress-navi li, #preentre #progress-navi li {
+      margin: 0 12px;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px; }
+      #confirm #progress-navi li > span, #application #progress-navi li > span, #user-registration #progress-navi li > span, #user-registration-body #progress-navi li > span, #preentre #progress-navi li > span {
+        height: 30px;
+        line-height: 30px;
+        width: 200px; }
+      #confirm #progress-navi li:before, #application #progress-navi li:before, #user-registration #progress-navi li:before, #user-registration-body #progress-navi li:before, #preentre #progress-navi li:before {
+        width: 200px;
+        height: 30px; }
+      #confirm #progress-navi li.current, #application #progress-navi li.current, #user-registration #progress-navi li.current, #user-registration-body #progress-navi li.current, #preentre #progress-navi li.current {
+        display: block; }
+        #confirm #progress-navi li.current:after, #application #progress-navi li.current:after, #user-registration #progress-navi li.current:after, #user-registration-body #progress-navi li.current:after, #preentre #progress-navi li.current:after {
+          background-color: #669d11; }
+  #confirm .lead, #application .lead, #user-registration .lead, #user-registration-body .lead, #preentre .lead {
+    margin-bottom: 30px; }
+    #confirm .lead a, #application .lead a, #user-registration .lead a, #user-registration-body .lead a, #preentre .lead a {
+      margin-top: 5px; }
+  #confirm .screen-reader-response, #application .screen-reader-response, #user-registration .screen-reader-response, #user-registration-body .screen-reader-response, #preentre .screen-reader-response {
+    width: calc(100% - 30px); }
+  #confirm .form-wrap dl, #application .form-wrap dl, #user-registration .form-wrap dl, #user-registration-body .form-wrap dl, #preentre .form-wrap dl {
+    margin-top: 20px; }
+    #confirm .form-wrap dl:first-child, #application .form-wrap dl:first-child, #user-registration .form-wrap dl:first-child, #user-registration-body .form-wrap dl:first-child, #preentre .form-wrap dl:first-child {
+      margin-top: 0; }
+    #confirm .form-wrap dl dt, #application .form-wrap dl dt, #user-registration .form-wrap dl dt, #user-registration-body .form-wrap dl dt, #preentre .form-wrap dl dt {
+      margin-bottom: 8px; }
+      #confirm .form-wrap dl dt.required:after, #application .form-wrap dl dt.required:after, #user-registration .form-wrap dl dt.required:after, #user-registration-body .form-wrap dl dt.required:after, #preentre .form-wrap dl dt.required:after {
+        margin-left: 13px;
+        display: inline-block;
+        width: 35px;
+        height: 18px;
+        line-height: 18px;
+        vertical-align: text-top; }
+    #confirm .form-wrap dl dd:after, #application .form-wrap dl dd:after, #user-registration .form-wrap dl dd:after, #user-registration-body .form-wrap dl dd:after, #preentre .form-wrap dl dd:after {
+      width: 0;
+      height: 1px;
+      content: "";
+      display: block;
+      clear: both; }
+    #confirm .form-wrap dl dd input.smp-half,
+    #confirm .form-wrap dl dd .select.smp-half,
+    #confirm .form-wrap dl dd textarea.smp-half, #application .form-wrap dl dd input.smp-half,
+    #application .form-wrap dl dd .select.smp-half,
+    #application .form-wrap dl dd textarea.smp-half, #user-registration .form-wrap dl dd input.smp-half,
+    #user-registration .form-wrap dl dd .select.smp-half,
+    #user-registration .form-wrap dl dd textarea.smp-half, #user-registration-body .form-wrap dl dd input.smp-half,
+    #user-registration-body .form-wrap dl dd .select.smp-half,
+    #user-registration-body .form-wrap dl dd textarea.smp-half, #preentre .form-wrap dl dd input.smp-half,
+    #preentre .form-wrap dl dd .select.smp-half,
+    #preentre .form-wrap dl dd textarea.smp-half {
+      width: 47%; }
+    #confirm .form-wrap dl dd input.smp-float, #confirm .form-wrap dl dd input .name_last, #confirm .form-wrap dl dd input.name_first,
+    #confirm .form-wrap dl dd .select.smp-float,
+    #confirm .form-wrap dl dd .select .name_last,
+    #confirm .form-wrap dl dd .select.name_first,
+    #confirm .form-wrap dl dd textarea.smp-float,
+    #confirm .form-wrap dl dd textarea .name_last,
+    #confirm .form-wrap dl dd textarea.name_first, #application .form-wrap dl dd input.smp-float, #application .form-wrap dl dd input .name_last, #application .form-wrap dl dd input.name_first,
+    #application .form-wrap dl dd .select.smp-float,
+    #application .form-wrap dl dd .select .name_last,
+    #application .form-wrap dl dd .select.name_first,
+    #application .form-wrap dl dd textarea.smp-float,
+    #application .form-wrap dl dd textarea .name_last,
+    #application .form-wrap dl dd textarea.name_first, #user-registration .form-wrap dl dd input.smp-float, #user-registration .form-wrap dl dd input .name_last, #user-registration .form-wrap dl dd input.name_first,
+    #user-registration .form-wrap dl dd .select.smp-float,
+    #user-registration .form-wrap dl dd .select .name_last,
+    #user-registration .form-wrap dl dd .select.name_first,
+    #user-registration .form-wrap dl dd textarea.smp-float,
+    #user-registration .form-wrap dl dd textarea .name_last,
+    #user-registration .form-wrap dl dd textarea.name_first, #user-registration-body .form-wrap dl dd input.smp-float, #user-registration-body .form-wrap dl dd input .name_last, #user-registration-body .form-wrap dl dd input.name_first,
+    #user-registration-body .form-wrap dl dd .select.smp-float,
+    #user-registration-body .form-wrap dl dd .select .name_last,
+    #user-registration-body .form-wrap dl dd .select.name_first,
+    #user-registration-body .form-wrap dl dd textarea.smp-float,
+    #user-registration-body .form-wrap dl dd textarea .name_last,
+    #user-registration-body .form-wrap dl dd textarea.name_first, #preentre .form-wrap dl dd input.smp-float, #preentre .form-wrap dl dd input .name_last, #preentre .form-wrap dl dd input.name_first,
+    #preentre .form-wrap dl dd .select.smp-float,
+    #preentre .form-wrap dl dd .select .name_last,
+    #preentre .form-wrap dl dd .select.name_first,
+    #preentre .form-wrap dl dd textarea.smp-float,
+    #preentre .form-wrap dl dd textarea .name_last,
+    #preentre .form-wrap dl dd textarea.name_first {
+      float: left;
+      margin-left: 6%; }
+      #confirm .form-wrap dl dd input.smp-float:first-of-type, #confirm .form-wrap dl dd input .name_last:first-of-type, #confirm .form-wrap dl dd input.name_first:first-of-type,
+      #confirm .form-wrap dl dd .select.smp-float:first-of-type,
+      #confirm .form-wrap dl dd .select .name_last:first-of-type,
+      #confirm .form-wrap dl dd .select.name_first:first-of-type,
+      #confirm .form-wrap dl dd textarea.smp-float:first-of-type,
+      #confirm .form-wrap dl dd textarea .name_last:first-of-type,
+      #confirm .form-wrap dl dd textarea.name_first:first-of-type, #application .form-wrap dl dd input.smp-float:first-of-type, #application .form-wrap dl dd input .name_last:first-of-type, #application .form-wrap dl dd input.name_first:first-of-type,
+      #application .form-wrap dl dd .select.smp-float:first-of-type,
+      #application .form-wrap dl dd .select .name_last:first-of-type,
+      #application .form-wrap dl dd .select.name_first:first-of-type,
+      #application .form-wrap dl dd textarea.smp-float:first-of-type,
+      #application .form-wrap dl dd textarea .name_last:first-of-type,
+      #application .form-wrap dl dd textarea.name_first:first-of-type, #user-registration .form-wrap dl dd input.smp-float:first-of-type, #user-registration .form-wrap dl dd input .name_last:first-of-type, #user-registration .form-wrap dl dd input.name_first:first-of-type,
+      #user-registration .form-wrap dl dd .select.smp-float:first-of-type,
+      #user-registration .form-wrap dl dd .select .name_last:first-of-type,
+      #user-registration .form-wrap dl dd .select.name_first:first-of-type,
+      #user-registration .form-wrap dl dd textarea.smp-float:first-of-type,
+      #user-registration .form-wrap dl dd textarea .name_last:first-of-type,
+      #user-registration .form-wrap dl dd textarea.name_first:first-of-type, #user-registration-body .form-wrap dl dd input.smp-float:first-of-type, #user-registration-body .form-wrap dl dd input .name_last:first-of-type, #user-registration-body .form-wrap dl dd input.name_first:first-of-type,
+      #user-registration-body .form-wrap dl dd .select.smp-float:first-of-type,
+      #user-registration-body .form-wrap dl dd .select .name_last:first-of-type,
+      #user-registration-body .form-wrap dl dd .select.name_first:first-of-type,
+      #user-registration-body .form-wrap dl dd textarea.smp-float:first-of-type,
+      #user-registration-body .form-wrap dl dd textarea .name_last:first-of-type,
+      #user-registration-body .form-wrap dl dd textarea.name_first:first-of-type, #preentre .form-wrap dl dd input.smp-float:first-of-type, #preentre .form-wrap dl dd input .name_last:first-of-type, #preentre .form-wrap dl dd input.name_first:first-of-type,
+      #preentre .form-wrap dl dd .select.smp-float:first-of-type,
+      #preentre .form-wrap dl dd .select .name_last:first-of-type,
+      #preentre .form-wrap dl dd .select.name_first:first-of-type,
+      #preentre .form-wrap dl dd textarea.smp-float:first-of-type,
+      #preentre .form-wrap dl dd textarea .name_last:first-of-type,
+      #preentre .form-wrap dl dd textarea.name_first:first-of-type {
+        margin-left: 0; }
+    #confirm .form-wrap dl dd input.smp-float.right,
+    #confirm .form-wrap dl dd .select.smp-float.right,
+    #confirm .form-wrap dl dd textarea.smp-float.right, #application .form-wrap dl dd input.smp-float.right,
+    #application .form-wrap dl dd .select.smp-float.right,
+    #application .form-wrap dl dd textarea.smp-float.right, #user-registration .form-wrap dl dd input.smp-float.right,
+    #user-registration .form-wrap dl dd .select.smp-float.right,
+    #user-registration .form-wrap dl dd textarea.smp-float.right, #user-registration-body .form-wrap dl dd input.smp-float.right,
+    #user-registration-body .form-wrap dl dd .select.smp-float.right,
+    #user-registration-body .form-wrap dl dd textarea.smp-float.right, #preentre .form-wrap dl dd input.smp-float.right,
+    #preentre .form-wrap dl dd .select.smp-float.right,
+    #preentre .form-wrap dl dd textarea.smp-float.right {
+      float: right; }
+    #confirm .form-wrap dl dd input.smp-ml-none,
+    #confirm .form-wrap dl dd .select.smp-ml-none,
+    #confirm .form-wrap dl dd textarea.smp-ml-none, #application .form-wrap dl dd input.smp-ml-none,
+    #application .form-wrap dl dd .select.smp-ml-none,
+    #application .form-wrap dl dd textarea.smp-ml-none, #user-registration .form-wrap dl dd input.smp-ml-none,
+    #user-registration .form-wrap dl dd .select.smp-ml-none,
+    #user-registration .form-wrap dl dd textarea.smp-ml-none, #user-registration-body .form-wrap dl dd input.smp-ml-none,
+    #user-registration-body .form-wrap dl dd .select.smp-ml-none,
+    #user-registration-body .form-wrap dl dd textarea.smp-ml-none, #preentre .form-wrap dl dd input.smp-ml-none,
+    #preentre .form-wrap dl dd .select.smp-ml-none,
+    #preentre .form-wrap dl dd textarea.smp-ml-none {
+      margin-left: 0; }
+    #confirm .form-wrap dl dd input.smp-mt,
+    #confirm .form-wrap dl dd .select.smp-mt,
+    #confirm .form-wrap dl dd textarea.smp-mt, #application .form-wrap dl dd input.smp-mt,
+    #application .form-wrap dl dd .select.smp-mt,
+    #application .form-wrap dl dd textarea.smp-mt, #user-registration .form-wrap dl dd input.smp-mt,
+    #user-registration .form-wrap dl dd .select.smp-mt,
+    #user-registration .form-wrap dl dd textarea.smp-mt, #user-registration-body .form-wrap dl dd input.smp-mt,
+    #user-registration-body .form-wrap dl dd .select.smp-mt,
+    #user-registration-body .form-wrap dl dd textarea.smp-mt, #preentre .form-wrap dl dd input.smp-mt,
+    #preentre .form-wrap dl dd .select.smp-mt,
+    #preentre .form-wrap dl dd textarea.smp-mt {
+      margin-top: 10px; }
+    #confirm .form-wrap dl dd input.other-text,
+    #confirm .form-wrap dl dd .select.other-text,
+    #confirm .form-wrap dl dd textarea.other-text, #application .form-wrap dl dd input.other-text,
+    #application .form-wrap dl dd .select.other-text,
+    #application .form-wrap dl dd textarea.other-text, #user-registration .form-wrap dl dd input.other-text,
+    #user-registration .form-wrap dl dd .select.other-text,
+    #user-registration .form-wrap dl dd textarea.other-text, #user-registration-body .form-wrap dl dd input.other-text,
+    #user-registration-body .form-wrap dl dd .select.other-text,
+    #user-registration-body .form-wrap dl dd textarea.other-text, #preentre .form-wrap dl dd input.other-text,
+    #preentre .form-wrap dl dd .select.other-text,
+    #preentre .form-wrap dl dd textarea.other-text {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    #confirm .form-wrap dl dd .radio:nth-of-type(n+3),
+    #confirm .form-wrap dl dd .checkbox:nth-of-type(n+3), #application .form-wrap dl dd .radio:nth-of-type(n+3),
+    #application .form-wrap dl dd .checkbox:nth-of-type(n+3), #user-registration .form-wrap dl dd .radio:nth-of-type(n+3),
+    #user-registration .form-wrap dl dd .checkbox:nth-of-type(n+3), #user-registration-body .form-wrap dl dd .radio:nth-of-type(n+3),
+    #user-registration-body .form-wrap dl dd .checkbox:nth-of-type(n+3), #preentre .form-wrap dl dd .radio:nth-of-type(n+3),
+    #preentre .form-wrap dl dd .checkbox:nth-of-type(n+3) {
+      margin-top: 10px; }
+    #confirm .form-wrap dl dd .unit, #application .form-wrap dl dd .unit, #user-registration .form-wrap dl dd .unit, #user-registration-body .form-wrap dl dd .unit, #preentre .form-wrap dl dd .unit {
+      font-size: 11px;
+      display: block;
+      margin-top: 5px; }
+    #confirm .form-wrap dl dd .caution-text, #application .form-wrap dl dd .caution-text, #user-registration .form-wrap dl dd .caution-text, #user-registration-body .form-wrap dl dd .caution-text, #preentre .form-wrap dl dd .caution-text {
+      font-size: 11px;
+      margin-top: 5px; }
+    #confirm .form-wrap dl dd > span.name_last, #confirm .form-wrap dl dd > span.name_first, #confirm .form-wrap dl dd > span.hiragana_name_last, #confirm .form-wrap dl dd > span.hiragana_name_first, #application .form-wrap dl dd > span.name_last, #application .form-wrap dl dd > span.name_first, #application .form-wrap dl dd > span.hiragana_name_last, #application .form-wrap dl dd > span.hiragana_name_first, #user-registration .form-wrap dl dd > span.name_last, #user-registration .form-wrap dl dd > span.name_first, #user-registration .form-wrap dl dd > span.hiragana_name_last, #user-registration .form-wrap dl dd > span.hiragana_name_first, #user-registration-body .form-wrap dl dd > span.name_last, #user-registration-body .form-wrap dl dd > span.name_first, #user-registration-body .form-wrap dl dd > span.hiragana_name_last, #user-registration-body .form-wrap dl dd > span.hiragana_name_first, #preentre .form-wrap dl dd > span.name_last, #preentre .form-wrap dl dd > span.name_first, #preentre .form-wrap dl dd > span.hiragana_name_last, #preentre .form-wrap dl dd > span.hiragana_name_first {
+      width: 47%; }
+      #confirm .form-wrap dl dd > span.name_last input, #confirm .form-wrap dl dd > span.name_first input, #confirm .form-wrap dl dd > span.hiragana_name_last input, #confirm .form-wrap dl dd > span.hiragana_name_first input, #application .form-wrap dl dd > span.name_last input, #application .form-wrap dl dd > span.name_first input, #application .form-wrap dl dd > span.hiragana_name_last input, #application .form-wrap dl dd > span.hiragana_name_first input, #user-registration .form-wrap dl dd > span.name_last input, #user-registration .form-wrap dl dd > span.name_first input, #user-registration .form-wrap dl dd > span.hiragana_name_last input, #user-registration .form-wrap dl dd > span.hiragana_name_first input, #user-registration-body .form-wrap dl dd > span.name_last input, #user-registration-body .form-wrap dl dd > span.name_first input, #user-registration-body .form-wrap dl dd > span.hiragana_name_last input, #user-registration-body .form-wrap dl dd > span.hiragana_name_first input, #preentre .form-wrap dl dd > span.name_last input, #preentre .form-wrap dl dd > span.name_first input, #preentre .form-wrap dl dd > span.hiragana_name_last input, #preentre .form-wrap dl dd > span.hiragana_name_first input {
+        width: 100%;
+        float: none; }
+    #confirm .form-wrap dl dd > span.name_last, #confirm .form-wrap dl dd > span.hiragana_name_last, #application .form-wrap dl dd > span.name_last, #application .form-wrap dl dd > span.hiragana_name_last, #user-registration .form-wrap dl dd > span.name_last, #user-registration .form-wrap dl dd > span.hiragana_name_last, #user-registration-body .form-wrap dl dd > span.name_last, #user-registration-body .form-wrap dl dd > span.hiragana_name_last, #preentre .form-wrap dl dd > span.name_last, #preentre .form-wrap dl dd > span.hiragana_name_last {
+      float: left; }
+    #confirm .form-wrap dl dd > span.name_first, #confirm .form-wrap dl dd > span.hiragana_name_first, #application .form-wrap dl dd > span.name_first, #application .form-wrap dl dd > span.hiragana_name_first, #user-registration .form-wrap dl dd > span.name_first, #user-registration .form-wrap dl dd > span.hiragana_name_first, #user-registration-body .form-wrap dl dd > span.name_first, #user-registration-body .form-wrap dl dd > span.hiragana_name_first, #preentre .form-wrap dl dd > span.name_first, #preentre .form-wrap dl dd > span.hiragana_name_first {
+      float: right; }
+    #confirm .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio > *, #application .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio > *, #user-registration .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio > *, #user-registration-body .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio > *, #preentre .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio > * {
+      width: auto;
+      float: left;
+      margin-bottom: 5px; }
+    #confirm .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio .wpcf7-list-item-label, #application .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio .wpcf7-list-item-label, #user-registration .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio .wpcf7-list-item-label, #user-registration-body .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio .wpcf7-list-item-label, #preentre .form-wrap dl dd .wpcf7-form-control-wrap .wpcf7-radio .wpcf7-list-item-label {
+      line-height: 36px;
+      vertical-align: middle; }
+  #confirm .form-wrap.confirm dl, #application .form-wrap.confirm dl, #user-registration .form-wrap.confirm dl, #user-registration-body .form-wrap.confirm dl, #preentre .form-wrap.confirm dl {
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 25px; }
+    #confirm .form-wrap.confirm dl dt, #application .form-wrap.confirm dl dt, #user-registration .form-wrap.confirm dl dt, #user-registration-body .form-wrap.confirm dl dt, #preentre .form-wrap.confirm dl dt {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 15px; }
+  #confirm .form-wrap.complete, #application .form-wrap.complete, #user-registration .form-wrap.complete, #user-registration-body .form-wrap.complete, #preentre .form-wrap.complete {
+    margin-top: -15px; }
+    #confirm .form-wrap.complete .title, #application .form-wrap.complete .title, #user-registration .form-wrap.complete .title, #user-registration-body .form-wrap.complete .title, #preentre .form-wrap.complete .title {
+      font-size: 16px;
+      margin-bottom: 10px; }
+    #confirm .form-wrap.complete .text, #application .form-wrap.complete .text, #user-registration .form-wrap.complete .text, #user-registration-body .form-wrap.complete .text, #preentre .form-wrap.complete .text {
+      text-align: center; }
+  #confirm .btn-list, #application .btn-list, #user-registration .btn-list, #user-registration-body .btn-list, #preentre .btn-list {
+    width: 265px;
+    margin: 25px auto 50px; }
+    #confirm .btn-list .btn, #application .btn-list .btn, #user-registration .btn-list .btn, #user-registration-body .btn-list .btn, #preentre .btn-list .btn {
+      margin-top: 18px;
+      width: 265px; }
+      #confirm .btn-list .btn:first-child, #application .btn-list .btn:first-child, #user-registration .btn-list .btn:first-child, #user-registration-body .btn-list .btn:first-child, #preentre .btn-list .btn:first-child {
+        margin-top: 0; }
+      #confirm .btn-list .btn.w160, #application .btn-list .btn.w160, #user-registration .btn-list .btn.w160, #user-registration-body .btn-list .btn.w160, #preentre .btn-list .btn.w160 {
+        width: 125px; }
+  #contact #user-registration .section-inner .section-contents .section-title, #contact #user-registration-body .section-inner .section-contents .section-title, #contact #preentre .section-inner .section-contents .section-title {
+    height: 20px; }
+    #contact #user-registration .section-inner .section-contents .section-title > *, #contact #user-registration-body .section-inner .section-contents .section-title > *, #contact #preentre .section-inner .section-contents .section-title > * {
+      line-height: 20px; }
+    #contact #user-registration .section-inner .section-contents .section-title .en, #contact #user-registration-body .section-inner .section-contents .section-title .en, #contact #preentre .section-inner .section-contents .section-title .en {
+      font-size: 20px; }
+    #contact #user-registration .section-inner .section-contents .section-title .jp, #contact #user-registration-body .section-inner .section-contents .section-title .jp, #contact #preentre .section-inner .section-contents .section-title .jp {
+      font-size: 10px; }
+  #contact #user-registration .section-inner .section-contents .lead, #contact #user-registration-body .section-inner .section-contents .lead, #contact #preentre .section-inner .section-contents .lead {
+    margin-bottom: 15px; }
+  #contact #user-registration .section-inner .section-contents .screen-reader-response, #contact #user-registration-body .section-inner .section-contents .screen-reader-response, #contact #preentre .section-inner .section-contents .screen-reader-response {
+    padding-bottom: 15px; } }
+
+/*  contact form 7
+-------------------------------------------*/
+.wpcf7-response-output {
+  display: none !important;
+  width: 710px;
+  padding: 25px;
+  border: 0 !important;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+  z-index: 10;
+  background-color: #fff;
+  text-align: center; }
+  .wpcf7-response-output.wpcf7-validation-errors {
+    color: #f00; }

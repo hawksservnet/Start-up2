@@ -1,0 +1,230 @@
+/* [ variable ]
+-------------------------------------------------*/
+/* font */
+/* font */
+/*  */
+/* [ font style ]
+-------------------------------------------------*/
+/* [ opacity ]
+-------------------------------------------------*/
+/* [ blur ]
+-------------------------------------------------*/
+/* [ radius ]
+-------------------------------------------------*/
+/* [ easing ]
+-------------------------------------------------*/
+/* [ transform ]
+-------------------------------------------------*/
+/* [ layout ]
+-------------------------------------------------*/
+@media only all and (min-width: 751px) {
+  #role-model {
+    padding-bottom: 210px; }
+    #role-model .text {
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: .1em; }
+    #role-model .model {
+      position: relative; }
+      #role-model .model .model-background {
+        width: 900px;
+        height: 365px;
+        background: #f3f2f0; }
+      #role-model .model .model-content {
+        position: absolute;
+        width: 500px;
+        padding: 60px 50px;
+        background: #fff;
+        box-shadow: 10px 10px 0 rgba(195, 194, 192, 0.2); }
+        #role-model .model .model-content .model-number {
+          position: absolute;
+          top: 19px;
+          left: -28px;
+          width: 55px;
+          height: 55px;
+          color: #fff;
+          text-align: center; }
+          #role-model .model .model-content .model-number span {
+            line-height: 55px;
+            font-size: 20px;
+            font-family: 'Roboto Condensed';
+            font-weight: bold;
+            position: relative;
+            z-index: 2; }
+          #role-model .model .model-content .model-number:before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            top: 0;
+            width: 55px;
+            height: 55px;
+            background: #669d11;
+            -webkit-transform: skewX(-10deg);
+                    transform: skewX(-10deg); }
+        #role-model .model .model-content .model-title {
+          font-size: 16px;
+          line-height: 26px;
+          margin-bottom: 15px;
+          font-weight: bold;
+          letter-spacing: .2em; }
+        #role-model .model .model-content .model-text {
+          font-size: 14px;
+          line-height: 25px;
+          letter-spacing: .1em; }
+      #role-model .model.model01 {
+        margin-top: 70px; }
+        #role-model .model.model01 .model-background {
+          background-image: url(../img/role-model/model01.svg);
+          background-repeat: no-repeat;
+          background-size: 344px 256px;
+          background-position: 78px 50px; }
+        #role-model .model.model01 .model-content {
+          right: 0;
+          top: 50px; }
+      #role-model .model.model02 {
+        margin-top: 155px; }
+        #role-model .model.model02 .model-background {
+          background-image: url(../img/role-model/model02.svg);
+          background-repeat: no-repeat;
+          background-size: 396px 293px;
+          background-position: 477px 26px;
+          margin-left: 180px; }
+        #role-model .model.model02 .model-content {
+          left: 0;
+          top: 50px; }
+      #role-model .model.model03 {
+        margin-top: 175px; }
+        #role-model .model.model03 .model-background {
+          background-image: url(../img/role-model/model03.svg);
+          background-repeat: no-repeat;
+          background-size: 428px 235px;
+          background-position: 41px 58px; }
+        #role-model .model.model03 .model-content {
+          right: 0;
+          top: 50px; }
+      #role-model .model.model04 {
+        margin-top: 205px; }
+        #role-model .model.model04 .model-background {
+          background-image: url(../img/role-model/model04.svg);
+          background-repeat: no-repeat;
+          background-size: 405px 233px;
+          background-position: 465px 66px;
+          margin-left: 180px; }
+        #role-model .model.model04 .model-content {
+          left: 0;
+          top: 50px; } }
+
+@media only all and (max-width: 750px) {
+  #role-model {
+    padding-bottom: 210px; }
+    #role-model .text {
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: .1em;
+      margin: 0 20px; }
+    #role-model .section-inner {
+      margin: 0; }
+    #role-model .model {
+      position: relative;
+      padding: 0 40px;
+      padding-top: 119px;
+      background: #f3f2f0; }
+      #role-model .model .model-content {
+        position: relative;
+        top: 150px;
+        background: #fff;
+        padding: 35px 20px;
+        box-shadow: 10px 10px 0 rgba(195, 194, 192, 0.2); }
+        #role-model .model .model-content .model-number {
+          position: absolute;
+          top: -28px;
+          left: -28px;
+          width: 55px;
+          height: 55px;
+          color: #fff;
+          text-align: center; }
+          #role-model .model .model-content .model-number span {
+            position: relative;
+            z-index: 2;
+            line-height: 55px;
+            font-family: 'Roboto Condensed';
+            font-size: 20px;
+            font-weight: bold; }
+          #role-model .model .model-content .model-number:before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            top: 0;
+            width: 55px;
+            height: 55px;
+            background: #669d11;
+            -webkit-transform: skewX(-10deg);
+                    transform: skewX(-10deg); }
+        #role-model .model .model-content .model-title {
+          font-size: 16px;
+          line-height: 25px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          letter-spacing: .2em; }
+        #role-model .model .model-content .model-text {
+          font-size: 14px;
+          line-height: 25px;
+          letter-spacing: .1em; }
+      #role-model .model.model01 {
+        margin-top: 25px;
+        padding-top: 118px; }
+        #role-model .model.model01 .model-background {
+          width: 281px;
+          height: 210px;
+          position: absolute;
+          top: 39px;
+          left: 50%;
+          margin-left: -124px;
+          background-image: url(../img/role-model/model01.svg);
+          background-repeat: no-repeat;
+          background-size: 281px 210px;
+          background-position: center; }
+      #role-model .model.model02 {
+        margin-top: 205px;
+        padding-top: 149px; }
+        #role-model .model.model02 .model-background {
+          width: 313.5px;
+          height: 239.5px;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          margin-left: -124px;
+          background-image: url(../img/role-model/model02.svg);
+          background-repeat: no-repeat;
+          background-size: 313.5px 239.5px;
+          background-position: center; }
+      #role-model .model.model03 {
+        margin-top: 205px;
+        padding-top: 86px; }
+        #role-model .model.model03 .model-background {
+          width: 318px;
+          height: 176.5px;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          margin-left: -126px;
+          background-image: url(../img/role-model/model03.svg);
+          background-repeat: no-repeat;
+          background-size: 318px 176.5px;
+          background-position: center; }
+      #role-model .model.model04 {
+        margin-top: 205px;
+        padding-top: 85px; }
+        #role-model .model.model04 .model-background {
+          width: 303.5px;
+          height: 175.5px;
+          position: absolute;
+          top: 40px;
+          left: 50%;
+          margin-left: -132px;
+          background-image: url(../img/role-model/model04.svg);
+          background-repeat: no-repeat;
+          background-size: 303.5px 175.5px;
+          background-position: center; } }

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* [ variable ]
+-------------------------------------------------*/
+/* font */
+/* font */
+/*  */
+/* [ font style ]
+-------------------------------------------------*/
+/* [ opacity ]
+-------------------------------------------------*/
+/* [ blur ]
+-------------------------------------------------*/
+/* [ radius ]
+-------------------------------------------------*/
+/* [ easing ]
+-------------------------------------------------*/
+/* [ transform ]
+-------------------------------------------------*/
+/* [ layout ]
+-------------------------------------------------*/
+/* # privacy
+-------------------------------------------------- */
+.privacy-section {
+  border-bottom: 1px solid #e4e4e3; }
+  .privacy-section .title {
+    font-weight: bold;
+    position: relative; }
+    .privacy-section .title:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-color: #669d11;
+      -webkit-transform: skew(-10deg);
+      -moz-transform: skew(-10deg);
+      -o-transform: skew(-10deg);
+      -ms-transform: skew(-10deg); }
+  .privacy-section .text {
+    line-height: 1.78; }
+
+/* PC =================================== */
+/* PC　ALL */
+@media only all and (min-width: 751px) {
+  .privacy-section {
+    padding-bottom: 40px;
+    margin-bottom: 45px;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto; }
+    .privacy-section .title {
+      font-size: 18px;
+      padding-left: 20px;
+      margin-bottom: 23px; }
+      .privacy-section .title:before {
+        width: 10px;
+        height: 7px; } }
+
+/* PC　サイズ別 */
+/* SMP =================================== */
+@media only all and (max-width: 750px) {
+  .privacy-section {
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    .privacy-section .title {
+      font-size: 15px;
+      padding-left: 20px;
+      margin-bottom: 15px; }
+      .privacy-section .title:before {
+        width: 7px;
+        height: 7px; } }

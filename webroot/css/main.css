@@ -1,0 +1,118 @@
+.style1 .scroll_tab_left_button::before {
+  content: "";
+  padding: 0px;
+}
+
+.style1 .scroll_tab_right_button::before {
+  content: "";
+  padding: 0px;
+}
+
+/* Set up our background image (i.e. toolbar for example) behind the tab-set */
+.style1 div.scroll_tab_inner {
+  height: 40px;
+  background: url(../images/toolbar-bg.jpg) repeat-x;
+}
+
+/* Setup the appearance of each individual TAB */
+.style1 div.scroll_tab_inner li {
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 40px;
+  font-size: 14px;
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -25px -40px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Style the FIRST tab differently from the rest, inherits from above */
+.style1 div.scroll_tab_inner li.scroll_tab_first {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -40px -40px;
+}
+
+/* Style the hover state for each tab */
+.style1 div.scroll_tab_inner li.scroll_tab_over {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -25px 0px !important;
+}
+
+/* Style the hover state for the first tab (Using MULTI-CLASS selectors may not work right in older browsers) */
+.style1 div.scroll_tab_inner li.scroll_tab_first.scroll_tab_over {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -40px 0px !important;
+}
+
+/* Style the left of the tab set if the arrows are hidden (the are is wide enough to show ALL the tabs */
+.style1 div.scroll_tab_inner li.scroll_tab_left_finisher {
+  padding: 0px;
+  width: 10px;
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat 0px -160px;
+}
+
+/* AND HOVER STATE */
+.style1 div.scroll_tab_inner li.scroll_tab_left_finisher.scroll_tab_over {
+  background-position: 0px -120px !important;
+}
+
+/* AND SELECTED STATE */
+.style1 div.scroll_tab_inner li.scroll_tab_left_finisher.tab_selected {
+  background-position: 0px -200px;
+}
+
+/* Style the right of the tab set if the arrows are hidden (the are is wide enough to show ALL the tabs */
+.style1 div.scroll_tab_inner li.scroll_tab_right_finisher {
+  padding: 0px;
+  width: 10px;
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat right -160px;
+}
+
+/* AND HOVER STATE */
+.style1div.scroll_tab_inner li.scroll_tab_right_finisher.scroll_tab_over {
+  background-position: right -120px !important;
+}
+
+/* AND SELECTED STATE */
+.style1div.scroll_tab_inner li.scroll_tab_right_finisher.tab_selected {
+  background-position: right -200px;
+}
+
+/* Style left scrolling button */
+.style1 .scroll_tab_left_button {
+  height: 40px;
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat 0px -40px;
+}
+
+/* Style left scrolling button HOVER */
+.style1 .scroll_tab_left_button.scroll_arrow_over {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat 0px 0px;
+}
+
+/* Style left scrolling button DISABLED */
+.style1 .scroll_tab_left_button.scroll_arrow_disabled {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat 0px -80px;
+}
+
+/* Style right scrolling button */
+.style1 .scroll_tab_right_button {
+  height: 40px;
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -474px -40px;
+}
+
+/* Style right scrolling button HOVER */
+.style1 .scroll_tab_right_button.scroll_arrow_over {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -474px 0px;
+}
+
+/* Style right scrolling button DISABLED */
+.style1 .scroll_tab_right_button.scroll_arrow_disabled{
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -474px -80px;
+}
+
+/* Style SELECTED (depressed) tab */
+.style1 div.scroll_tab_inner li.tab_selected {
+  background: transparent url(../images/scroll_tab_bg.jpg) no-repeat -25px -80px;
+}
+
+/* Style SELECTED (depressed) if it's the FIRST tab */
+.style1 div.scroll_tab_inner li.tab_selected.scroll_tab_first {
+  background-position: -40px -200px;
+}
+      

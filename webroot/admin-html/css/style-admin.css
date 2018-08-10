@@ -1,0 +1,133 @@
+/*========================
+     admin event page (017)
+==========================*/
+.ad-show-time {
+    clear: both;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.ad-fm-submit {
+    border: 1px #ccc dashed;
+    width: 50%;
+    display: inline-block;
+    padding: 6px 0;
+    line-height: normal;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 10px;
+}
+.fa:hover, .fa:focus{
+    text-decoration:none;
+    cursor: pointer;
+}
+.ad-text-tooltip{
+    text-align: left;
+}
+.ad-text-header{
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 16px;
+}
+.ad-textarea{
+    border: 1px #000 solid;
+    margin-bottom: 15px;
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+}
+.ad-textarea-custom{
+    width: auto;
+}
+.ad-none-padding{
+    padding: 0;
+}
+.ad-checkbox, .ad-radio{
+    margin-right: 10px;
+    font-weight:normal;
+}
+.ad-checkbox input{
+    vertical-align: middle;
+    position: relative !important;
+    margin-left: 0px !important;
+}
+.ad-none-padding-left{
+    padding-left: 0px;
+}
+.ad-line-space{
+    margin-bottom: 15px;
+}
+input.ad-form-search{
+    width: 100% !important; ;
+}
+.ad-btn-align-right{
+    float: right;
+    margin-right: 70px;
+}
+/*
+========================
+     admin event page (018)
+==========================*/
+.ad-table-center td{
+    vertical-align: middle !important;
+    border-top: none !important;
+    border-bottom: 1px solid #ddd;
+}
+.ad-table-center tr:last-child td{
+    border-bottom:none !important;
+}
+.ad-btn{
+    background-color: #d9d9d9;
+    line-height: 26px;
+    border: 1px #000 solid;
+    float: right;
+    padding: 0px 18px;
+}
+.ad-padding-right-none{
+    padding-right: 0px !important;
+}
+.ad-wrap-btn{
+    text-align: center;
+}
+.ad-text-right{
+    text-align: right;
+}
+.ad-text-center{
+    text-align: center;
+}
+/*========================
+     admin event page (019)
+==========================*/
+.ad-select{
+    width: auto;
+    height: auto;
+}
+.ad-aline{
+    line-height: 32px;
+}
+.ad-form-center{
+    margin: 0px auto;
+    text-align: center;
+}
+.ad-btn-lg{
+    padding: 10px 40px;
+    margin: 0px 25px;
+}
+
+/*========================
+     admin event page (023)
+==========================*/
+.ad-table{
+    margin-bottom: 25px;
+}
+.ad-table .fm-alias{
+    margin-bottom: 0px;
+}
+
+.ad-table .form-inline{
+    margin: 15px 0px;
+}
+
+.ad-table td .cont-col{
+    overflow-y: auto;
+}

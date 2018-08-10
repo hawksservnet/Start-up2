@@ -1,0 +1,275 @@
+.float-right{
+    float: right !important;
+    margin-bottom: 15px;
+}
+.view-mobile{
+    display: none;
+}
+#fixed-btn .btn{
+    box-sizing: unset;
+}
+/* FULLCALENDAR */
+.fc-state-default {
+    background-color: #ffffff;
+    background-image: none;
+    background-repeat: repeat-x;
+    box-shadow: none;
+    color: #333333;
+    text-shadow: none;
+}
+.fc-state-default {
+    border: 1px solid;
+}
+.fc-unselectable{
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    -webkit-touch-callout: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.fc-button {
+    color: inherit;
+    border: 1px solid #e7eaec;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.9em;
+    line-height: 1.9em;
+    overflow: hidden;
+    padding: 0 0.6em;
+    position: relative;
+    white-space: nowrap;
+}
+.fc-state-active {
+    background-color: #1ab394;
+    border-color: #1ab394;
+    color: #ffffff;
+}
+.fc-header-title h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: inherit;
+}
+.fc-content .fc-widget-header,
+.fc-content .fc-widget-content {
+    border-color: #e7eaec;
+    font-weight: normal;
+}
+.fc-border-separate tbody {
+    background-color: #F8F8F8;
+}
+.fc-state-highlight {
+    background: none repeat scroll 0 0 #FCF8E3;
+}
+.external-event {
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.fc-ltr .fc-event-hori.fc-event-end,
+.fc-rtl .fc-event-hori.fc-event-start {
+    border-radius: 2px;
+}
+.fc-event{
+    border-radius: 5px;
+    padding: 5px 0px;
+    padding-left: 2px;
+}
+.fc-event,
+.fc-agenda .fc-event-time,
+.fc-event a {
+    background-color: #1ab394;
+    border-color: #1ab394;
+}
+.fc-event-time,
+.fc-event-title {
+    color: #717171;
+    padding: 0 1px;
+}
+.ui-calendar .fc-event-time,
+.ui-calendar .fc-event-title {
+    color: #fff;
+}
+.fc-resource-cell{
+    cursor: pointer;
+}
+a.fc-more{
+    float: left;
+    color: #0000ff;
+}
+.fc button{
+    /*padding: 0px 1.6em;*/
+    width: 40px;
+    height:40px;
+}
+.fc-button-group select
+{
+    height: 40px;
+}
+/*fc-calendar-default*/
+.fc-calendar-default td, .fc-calendar-default th {
+    width: auto;
+}
+.fc-calendar-default .fc-view.fc-agenda-view{
+   /* max-width: 990px;*/
+}
+.fc-calendar-default .fc-view-container{
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+/*fc-calendar-classic*/
+.fc-calendar-classic .fc-resource-cell, .fc-calendar-classic th {
+    background: #669d11 !important;
+    color:#fff;
+    padding: 12px 5px;
+    border-color: #000;
+}
+.firefox .fc-calendar-classic th {
+    /*border: none;*/
+    padding: 0px;
+}
+.firefox .fc-calendar-classic th span {
+    /*border-left: 1px solid #000;*/
+    display: block;
+    padding: 12px 0px;
+    width: 100%;
+}
+.firefox .fc-calendar-classic th.fc-axis {
+    padding: 0px 50px;
+}
+.fc-calendar-classic .fc-time-grid > .fc-bg tr td:first-child{
+    background: #669d11;
+}
+
+.fc-calendar-classic .fc-slats tr.fc-minor td{
+    border-top: none;
+}
+
+.fc-calendar-classic .fc-axis{
+     padding: 0px 50px;
+    color:#fff;
+}
+.fc-calendar-classic .fc-axis.fc-time.fc-widget-content span{
+    position: relative;
+    top:7px;
+}
+.fc-calendar-classic .fc-time-grid > .fc-bg, .fc-calendar-classic .fc-row .fc-bg{
+    background-color: #f3f2f0;
+}
+.fc-calendar-classic .fc-time-grid-event .fc-content, .fc-calendar-classic .fc-day-grid-event .fc-content{
+    color:#333;
+}
+.fc-calendar-classic .fc-button.fc-state-active{
+    background: #669d11;
+    border: 1px solid #669d11;
+}
+
+.fc-calendar-classic .fc-button.fc-state-hover:hover{
+    background: #669d11;
+    color: #fff;
+    border: 1px solid #669d11;
+}
+
+.fc-calendar-classic a:-webkit-any-link .fc-content .fc-title{
+    text-decoration: underline;
+}
+
+.fc-calendar-classic .fc th, .fc td{
+    border: 1px solid #000;
+}
+.fc-calendar-classic .fc-today{
+    background: none;
+}
+.fc-calendar-classic .fc-event:focus{
+    outline: none;
+}
+.fc-calendar-classic .fc-time-grid-event .fc-time, .fc-calendar-classic .fc-day-grid-event .fc-time{
+    display: none;
+}
+.fc-calendar-classic .fc-agendaWeek-view .fc-time-grid-event {
+    padding: 3px 0px;
+    height: 12px;
+    margin-top: 1px;
+}
+@media all and (max-width: 992px) {
+    .fc-calendar-classic .fc-axis{
+        padding: 0px 20px;
+    }
+    .fc-calendar-default .fc-view.fc-agenda-view{
+        min-width: 680px;
+    }
+}
+
+
+@media all and (max-width: 736px) {
+    .title-pop
+    {
+        margin-bottom: 0;
+    }
+    .fc-reponsive
+    {
+        float:none;
+        width: 100%;
+    }
+    .fc-reponsive .fc-button-group{
+        width: 100%;
+    }
+    .fc-reponsive .fc-button-group select
+    {
+        width: 100%;
+        margin-top: 10px !important;
+    }
+}
+@media all and (max-width: 480px) {
+    .view-mobile{
+        display: block;
+        margin: 10px 0px;
+    }
+    .view-table > li{
+        display: table;
+        clear: both;
+        content: '';
+    }
+    .left-art ul li .art-pic{
+        width: auto;
+        float: left;
+        margin-left: 10px;
+    }
+    .left-art ul li .art-name{
+        width: 65%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .fc-calendar-classic .fc-axis{
+        padding: 0px;
+    }
+    .fc-calendar-classic .fc-resource-cell, .fc-calendar-classic th{
+        padding: 5px;
+        font-size: 10px;
+        vertical-align: middle;
+    }
+    .fc-calendar-default .fc-view.fc-agenda-view{
+        min-width: 100%;
+        overflow: hidden;
+    }
+    .fc-calendar-classic .fc-axis.fc-time.fc-widget-content span{
+        position: relative;
+        top: 25px;
+        left: 0px;
+        font-size: 10px;
+    }
+    .fc-time-grid-event.fc-short .fc-title{
+        font-size: 0.5em;
+    }
+    .fc-time-grid .fc-event, .fc-time-grid .fc-bgevent{
+        height: 5px;
+    }
+    .fc-calendar-classic .fc-agendaWeek-view .fc-time-grid-event {
+        height: 6px;
+        padding-left: 2px;
+    }
+}
